@@ -1,12 +1,8 @@
-/*
-*, ::before, ::after {
-    box-sizing: border-box;
-}
-*/
 .div4_parent_container {
     background: linear-gradient(180deg,#09070c 22%,#201335 100%);
     padding-top: 48px;
     padding-bottom: 48px;
+    margin: 0px;
 }
 .div4_container {
     padding: 48px 24px;
