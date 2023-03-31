@@ -155,3 +155,24 @@ body {
     top: 24px;
     right:24px;
 }
+@media screen and (max-width: 851px) {
+.div4_box1 {
+    flex-direction: column;
+}
+.div4_box2 {
+    margin-bottom: 16px;
+    margin-right: 0px;
+}
+.div4_box5 {
+    margin-top:0px;
+    justify-content: flex-start;
+}
+.div4_box4 {
+    max-height: 118px;
+}
+}
+@media screen and (max-width: 968px) {
+#div4_text1, #div4_text2, #div4_box_a_text1, #div4_box_a_text1a, #div4_box_a_text2a, #div4_box_a_text3a {
+    font-size: 32px;
+}
+}   
