@@ -387,4 +387,51 @@ body {
     display: grid;
     color: white;
     margin-top: 24px;
+    gap: 32px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 32px;
+    grid-row-gap: 32px;
+}
+
+.div8_grid_title {
+    color: #b8add2;
+    font-size: 16px;
+    line-height: 1.5;
+}
+.div8_grid_text {
+    color: #f4eeff;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.1;
+}
+.div8_b_t1 { 
+    grid-area: 1 / 1 / 2 / 2; 
+    border-left: 1px solid #262130;
+    padding: 0px 16px;
+}
+.div8_b_t2 { 
+    grid-area: 1 / 2 / 2 / 3;
+    border-left: 1px solid #262130;
+    padding: 0px 16px;
+}
+.div8_b_t3 { 
+    grid-area: 1 / 3 / 2 / 4;
+    border-left: 1px solid #262130;
+    padding: 0px 16px;
+}
+.div8_b_b1 {
+    grid-area: 2 / 1 / 3 / 2;
+    border-left: 1px solid #262130;
+    padding: 0px 16px;
+}
+.div8_b_b2 {
+    grid-area: 2 / 2 / 3 / 3;
+    border-left: 1px solid #262130;
+    padding: 0px 16px;
+}
+.div8_b_b3 {
+    grid-area: 2 / 3 / 3 / 4;
+    border-left: 1px solid #262130;
+    padding: 0px 16px;
 }
