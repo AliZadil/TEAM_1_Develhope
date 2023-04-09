@@ -812,6 +812,28 @@ body {
     color:white;
     width: 100vw;
     }
+
+    @media(max-width: 1000px){
+        #div6images{
+            width: 100px;
+            height: 100px;
+            position: relative;
+            right: 10px;
+            top: 15px;
+            }
+        #div6content{
+            display: flex;
+            justify-content: flex-start;
+        }
+        #div6space{
+            width: 0px;
+        }
+        #div6columns{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        
+    }
       section#div6upperpart{
       display: flex;
       }
@@ -1012,6 +1034,15 @@ body {
     
     
 /* div_7 */
+
+@media (max-width: 1020px) {
+    #div7frame{
+        width:90%;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+    }
+}
 
     #div7winmillions{
     background: linear-gradient(rgb(2, 49, 74), rgb(1, 14, 24));
