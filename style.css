@@ -825,7 +825,7 @@ body {
             display: flex;
             justify-content: flex-start;
         }
-        #div6space{
+        .div6space{
             width: 0px;
         }
         #div6columns{
@@ -903,7 +903,7 @@ body {
              color:rgb(155, 100, 181);
             }
     
-            #div6space{
+            .div6space{
              width: 20%;
              height: 500px;
             }
@@ -1036,12 +1036,16 @@ body {
 /* div_7 */
 
 @media (max-width: 1020px) {
+    #div7ball2, #div7ball6, #div7ball9, #div7ball, #div7ball7, #div7ball4{
+        right: 0px;
+    }
     #div7frame{
         width:90%;
         display: flex;
         text-align: center;
         flex-direction: column;
     }
+
 }
 
     #div7winmillions{
@@ -1238,9 +1242,9 @@ body {
                  animation-iteration-count: infinite;
                   }
                   @keyframes ball7{
-                 0%{left:805px; top:0px;}
-                 50%{left: 840px; top:10px;}
-                 100%{left:805px; top: 0px;}
+                 0%{left:800px; top:0px;}
+                 50%{left: 800px; top:10px;}
+                 100%{left:800px; top: 0px;}
                   }
                   #div7ball4{
                  position: absolute;
