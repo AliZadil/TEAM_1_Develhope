@@ -683,6 +683,9 @@ body {
     justify-content: center;
     align-items: center;
 }
+.ps_word a, .ps_word:visited a, a.ps_word:hover a, .ps_word:active a {
+    color: #e4e4e4;
+  }
 
 @media screen and (max-width: 768px) {
 }
