@@ -1,12 +1,74 @@
-var detailsButton = document.getElementsByClassName("faqtoggle");
-var hiddenRow = document.getElementsByClassName("faq_hiddenrow");
+var toggleHidden1 = document.getElementById("faqtoggle1");
+var detailsButton1 = document.getElementById("faqbutton1");
+var hiddenRow1 = document.getElementById("hiddenrow1");
 
-detailsButton.addEventListener("click", function() {
-  if (hiddenRow.style.display === "none") {
-    hiddenRow.style.display = "flex";
-    detailsButton.innerHTML = "Hide";
+var toggleHidden2 = document.getElementById("faqtoggle2");
+var detailsButton2 = document.getElementById("faqbutton2");
+var hiddenRow2 = document.getElementById("hiddenrow2");
+
+var toggleHidden3 = document.getElementById("faqtoggle3");
+var detailsButton3 = document.getElementById("faqbutton3");
+var hiddenRow3 = document.getElementById("hiddenrow3");
+
+var toggleHidden4 = document.getElementById("faqtoggle4");
+var detailsButton4 = document.getElementById("faqbutton4");
+var hiddenRow4 = document.getElementById("hiddenrow4");
+
+var toggleHidden5 = document.getElementById("faqtoggle5");
+var detailsButton5 = document.getElementById("faqbutton5");
+var hiddenRow5 = document.getElementById("hiddenrow5");
+
+hiddenRow1.style.display = "none";
+toggleHidden1.addEventListener("click", function() {
+  if (hiddenRow1.style.display === "none") {
+    hiddenRow1.style.display = "flex";
+    detailsButton1.innerHTML = "Hide";
   } else {
-    hiddenRow.style.display = "none";
-    detailsButton.innerHTML = "Details";
+    hiddenRow1.style.display = "none";
+    detailsButton1.innerHTML = "Details";
+  }
+});
+
+hiddenRow2.style.display = "none";
+toggleHidden2.addEventListener("click", function() {
+  if (hiddenRow2.style.display === "none") {
+    hiddenRow2.style.display = "flex";
+    detailsButton2.innerHTML = "Hide";
+  } else {
+    hiddenRow2.style.display = "none";
+    detailsButton2.innerHTML = "Details";
+  }
+});
+
+hiddenRow3.style.display = "none";
+toggleHidden3.addEventListener("click", function() {
+  if (hiddenRow3.style.display === "none") {
+    hiddenRow3.style.display = "flex";
+    detailsButton3.innerHTML = "Hide";
+  } else {
+    hiddenRow3.style.display = "none";
+    detailsButton3.innerHTML = "Details";
+  }
+});
+
+hiddenRow4.style.display = "none";
+toggleHidden4.addEventListener("click", function() {
+  if (hiddenRow4.style.display === "none") {
+    hiddenRow4.style.display = "flex";
+    detailsButton4.innerHTML = "Hide";
+  } else {
+    hiddenRow4.style.display = "none";
+    detailsButton4.innerHTML = "Details";
+  }
+});
+
+hiddenRow5.style.display = "none";
+toggleHidden5.addEventListener("click", function() {
+  if (hiddenRow5.style.display === "none") {
+    hiddenRow5.style.display = "flex";
+    detailsButton5.innerHTML = "Hide";
+  } else {
+    hiddenRow5.style.display = "none";
+    detailsButton5.innerHTML = "Details";
   }
 });
