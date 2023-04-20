@@ -403,6 +403,20 @@
   margin-right: 5px;
 }
 
+footer {
+  display: flex;
+  min-height: 400px;
+  background: #9a6aff;
+  color: #f4eeff;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+}
+footer::after {
+  content: "/ To test showing up hidden divs";
+}
+
 .bluebutton {
   display: flex;
   align-items: center;
