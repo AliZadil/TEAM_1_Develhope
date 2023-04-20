@@ -256,14 +256,134 @@ $middle_weight: 400;
     }
 }
 
+.section4 {
+    display: flex;
+    flex-direction: column;
+    max-width: 724px;
+    margin: 0px auto;
+    &_box_imgtext, &_box_textimg {
+        display: flex;
+        flex-direction: row;
+        margin-top: 48px;
+        img {
+            width: 220px;
+            height: auto;
+        }
+        .section4_box_text {
+            display: flex;
+            flex-direction: column;
+            align-self: center;
+            margin: 0px 32px;
+            .section4_box_right_top {
+                margin-bottom: 24px;
+                color: $color-text3;
+                font-weight: $heavy_weight;
+                line-height: 1.5;
+                font-size: 32px;
+            }
+            .section4_box_right_bot {
+                color: $color-text2;
+                font-weight: $middle_weight;
+                line-height: 1.5;
+                font-size: 16px;
+            }
+        }
+    }
+}
 
+.parent_section5 {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    padding: 14px 0px 48px;
+    background: linear-gradient(180deg,#434575,#66578d);;
+}
+.section5_box {
+    padding: 0px 16px;
+    max-width: 1200px;
+    margin: 0px auto;
+}
+.section5 {
+    max-width: 1028px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &_header {
+        color: $color-text1;
+        font-size: 40px;
+        font-weight: $heavy_weight;
+        line-height: 1.5;
+        text-align: center;
+        margin-bottom: 64px;
+    }
+    &_faq{
+        display: flex;
+        flex-direction: column;
+        background: #27262c;
+        color: $color-text1;
+        border-radius: 24px;
+        border: 1px solid #383241;
+        border-bottom: 3px solid #383241;
+        &_header {
+            padding: 24px;
+            background: linear-gradient(166.77deg,#3b4155,#3a3045);
+            border-top-right-radius: 24px;
+            border-top-left-radius: 24px;
+            h2 {
+                font-size: 24px;
+                color: $color-text3;
+                font-weight: $heavy_weight;
+                line-height: 1.1;
+                margin: 0px;
+            }
+        }
+        &_bottom {
+            display: flex;
+            flex-direction: column;
+            padding: 24px;
+            .section5_faq_q_box {
+                display: flex;
+                flex-direction: column;
+                margin-top: 24px;
+                .faq_toprow {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    cursor: pointer;
+                    padding-bottom: 16px;
+                    &_q {
+                        color: $color-text1;
+                        font-size: 16px;
+                        font-weight: bold;
+                        line-height: 1.5;
+                    }
+                    .faq_button_area {
+                        display: flex;
 
+                    }
+                }
+                .faq_hiddenrow {
+                    display: none;
+                    flex-direction: column;
+                    padding-bottom: 16px;
+                    .hiddenrow_text {
+                        color: $color-text2;
+                        font-weight: $middle_weight;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
 
+}
 
-
-
-
-
+.dash {
+    display: inline-block;
+    margin-right: 5px;
+}
 
 
 
