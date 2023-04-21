@@ -372,6 +372,11 @@ $middle_weight: 400;
                             font-size: 16px;
                             height: 48px;
                             padding: 0px 24px;
+                            img {
+                                margin-left:8px;
+                                top:5px;
+                                position:relative;
+                            }
                             &:hover {
                                 opacity: 0.5;
                             }
