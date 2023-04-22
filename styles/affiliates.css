@@ -475,4 +475,26 @@ footer::after {
 }
 .trans_anchor:hover {
   text-decoration: underline;
+}
+
+@media screen and (max-width: 576px) {
+  .header2 {
+    justify-content: start;
+    padding-left: 0px;
+    margin-left: 0px;
+  }
+}
+@media screen and (max-width: 370px) {
+  .header2 {
+    justify-content: start;
+    margin-left: 10px;
+  }
+  .header2_application a svg {
+    display: none;
+  }
+}
+@media screen and (max-width: 852px) {
+  .parent_section1 {
+    padding-top: 16px;
+  }
 }/*# sourceMappingURL=affiliates.css.map */

@@ -1,6 +1,6 @@
-$color-text1: #f4eeff;
-$color-text2: #b8add2;
-$color-text3: #9a6aff;
+$color-text1-dark: #f4eeff;
+$color-text2-dark: #b8add2;
+$color-text3-dark: #9a6aff;
 $color-button: #1fc7d4;
 $heavy_weight: 600;
 $middle_weight: 400;
@@ -17,7 +17,7 @@ $middle_weight: 400;
             display: flex;
             padding: 4px 4px 0px;
             a {
-                color: $color-text2;
+                color: $color-text2-dark;
                 font-weight: $middle_weight;
                 line-height: 2.4;
             }
@@ -25,12 +25,12 @@ $middle_weight: 400;
                 background-color: rgba(81, 86, 111, 0.5);
             }
             svg {
-                fill: $color-text2;
+                fill: $color-text2-dark;
                 position: relative;
                 top: 4px;
             }
         }
-        &_overview {border-bottom: 4px solid $color-button; a {color:$color-text3;font-weight: $heavy_weight;}}
+        &_overview {border-bottom: 4px solid $color-button; a {color:$color-text3-dark;font-weight: $heavy_weight;}}
 }
 .container_section1 {
     background: rgb(33,25,58);
@@ -65,14 +65,14 @@ $middle_weight: 400;
         &_a {
             font-size: 64px;
             font-weight: $heavy_weight;
-            color: $color-text3;
+            color: $color-text3-dark;
             line-height: 1.1;
         }
         &_b {
             font-size: 24px;
             font-weight: $heavy_weight;
             margin: 32px 0px;
-            color: $color-text1;
+            color: $color-text1-dark;
             line-height: 1.1;
         }
         &_c {
@@ -127,7 +127,7 @@ $middle_weight: 400;
             text-align: center;
             font-weight: $middle_weight;
             line-height: 1.5;
-            color: $color-text2 ;
+            color: $color-text2-dark ;
         }
         #centered_bb {
             margin-right: 0px;
@@ -144,14 +144,14 @@ $middle_weight: 400;
                 font-weight: $heavy_weight;
                 line-height: 1.5;
                 font-size: 20px;
-                color: $color-text3;
+                color: $color-text3-dark;
                 margin-bottom: 16px;
             }
             &b {
                 font-weight: $middle_weight;
                 line-height: 1.5;
                 font-size: 16px;
-                color: $color-text2;
+                color: $color-text2-dark;
                 margin-bottom: 48px;
                 text-align: center;
             }
@@ -178,13 +178,13 @@ $middle_weight: 400;
                     flex-direction: column;
                     align-items: center;
                     &1 {
-                        color: $color-text3;
+                        color: $color-text3-dark;
                         font-weight: $heavy_weight;
                         line-height: 1.5;
                         font-size: 12px;
                     }
                     &2 {
-                        color: $color-text1;
+                        color: $color-text1-dark;
                         font-weight: $heavy_weight;
                         line-height: 1.5;
                         font-size: 32px;
@@ -209,13 +209,13 @@ $middle_weight: 400;
                     flex-direction: column;
                     align-items: center;
                     &1 {
-                        color: $color-text3;
+                        color: $color-text3-dark;
                         font-weight: $heavy_weight;
                         line-height: 1.5;
                         font-size: 12px;
                     }
                     &2 {
-                        color: $color-text1;
+                        color: $color-text1-dark;
                         font-weight: $heavy_weight;
                         line-height: 1.5;
                         font-size: 32px;
@@ -240,13 +240,13 @@ $middle_weight: 400;
                     flex-direction: column;
                     align-items: center;
                     &1 {
-                        color: $color-text3;
+                        color: $color-text3-dark;
                         font-weight: $heavy_weight;
                         line-height: 1.5;
                         font-size: 12px;
                     }
                     &2 {
-                        color: $color-text1;
+                        color: $color-text1-dark;
                         font-weight: $heavy_weight;
                         line-height: 1.5;
                         font-size: 32px;
@@ -277,13 +277,13 @@ $middle_weight: 400;
             margin: 0px 32px;
             .section4_box_right_top {
                 margin-bottom: 24px;
-                color: $color-text3;
+                color: $color-text3-dark;
                 font-weight: $heavy_weight;
                 line-height: 1.5;
                 font-size: 32px;
             }
             .section4_box_right_bot {
-                color: $color-text2;
+                color: $color-text2-dark;
                 font-weight: $middle_weight;
                 line-height: 1.5;
                 font-size: 16px;
@@ -311,7 +311,7 @@ $middle_weight: 400;
     flex-direction: column;
     align-items: center;
     &_header {
-        color: $color-text1;
+        color: $color-text1-dark;
         font-size: 40px;
         font-weight: $heavy_weight;
         line-height: 1.5;
@@ -322,7 +322,7 @@ $middle_weight: 400;
         display: flex;
         flex-direction: column;
         background: #27262c;
-        color: $color-text1;
+        color: $color-text1-dark;
         border-radius: 24px;
         border: 1px solid #383241;
         border-bottom: 3px solid #383241;
@@ -334,7 +334,7 @@ $middle_weight: 400;
             border-top-left-radius: 24px;
             h2 {
                 font-size: 24px;
-                color: $color-text3;
+                color: $color-text3-dark;
                 font-weight: $heavy_weight;
                 line-height: 1.1;
                 margin: 0px;
@@ -356,7 +356,7 @@ $middle_weight: 400;
                     cursor: pointer;
                     padding-bottom: 16px;
                     &_q {
-                        color: $color-text1;
+                        color: $color-text1-dark;
                         font-size: 16px;
                         font-weight: bold;
                         line-height: 1.5;
@@ -388,7 +388,7 @@ $middle_weight: 400;
                     flex-direction: column;
                     padding-bottom: 16px;
                     .hiddenrow_text {
-                        color: $color-text2;
+                        color: $color-text2-dark;
                         font-weight: $middle_weight;
                         font-size: 16px;
                         a {
@@ -410,8 +410,8 @@ $middle_weight: 400;
 footer {
     display: flex;
     min-height: 400px;
-    background: $color-text3;
-    color: $color-text1;
+    background: $color-text3-dark;
+    color: $color-text1-dark;
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -420,30 +420,6 @@ footer {
         content: "/ To test showing up hidden divs";
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .bluebutton {
     display: flex;
@@ -496,5 +472,31 @@ footer {
     color: #1fc7d4;
     &:hover {
         text-decoration: underline;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .header2 {
+        justify-content:start;
+        padding-left: 0px;
+        margin-left: 0px;
+    }
+}
+@media screen and (max-width: 370px) {
+    .header2 {
+        justify-content:start;
+        margin-left: 10px;
+        &_application {
+            a {
+                svg {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 852px) {
+    .parent_section1 {
+        padding-top: 16px;
     }
 }
