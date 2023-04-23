@@ -6,6 +6,19 @@ $heavy_weight: 600;
 $middle_weight: 400;
 
 
+.testnavbar {
+    display: flex;
+    min-height: 50px;
+    background: $color-text3-dark;
+    color: $color-text1-dark;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    &::after {
+        content: "Navbar";
+    }
+}
 .header2 {
     background-color: rgba(39, 38, 44, 0.7);
     height: 42px;
@@ -38,9 +51,30 @@ $middle_weight: 400;
 }
 .parent_section1 {
     display: flex;
+    position: relative;
     justify-content: center;
     padding-top: 48px;
     padding-bottom: 48px;
+}
+.section1_floating {
+    #floimg1 {
+        position: absolute;
+        left: 15%;
+        top: 6%;
+        width: auto;
+    }
+    #floimg2 {
+        position: absolute;
+        left: 15%;
+        bottom: 5%;
+        width: auto;
+    }
+    #floimg3 {
+        position: absolute;
+        right: 10%;
+        top: 15%;
+        width: auto;
+    }
 }
 .section1 {
     max-width: 1200px;
@@ -417,7 +451,7 @@ footer {
     justify-content: center;
     font-size: 40px;
     &::after {
-        content: "/ To test showing up hidden divs";
+        content: "Footer";
     }
 }
 
