@@ -1,298 +1,507 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PancakeSwap</title>
-    <link href="images/favicon.ico" rel="icon" type="image/x-icon"/>
-    <link href="style.css" rel="stylesheet">
-    <link href="styles/affiliates.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com" rel="preconnect">
-    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-          rel="stylesheet">
-    <script defer src="jpt.js"></script >
-        </head>
-        <body style="display: flex;">
+    <link href="images/favicon.ico" rel="icon" type="image/x-icon" />
+    <link href="style.css" rel="stylesheet" />
+    <link href="styles/affiliates.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="jpt.js"></script>
+  </head>
+
+  <body style="display: flex">
     <div class="testnavbar"></div>
     <div class="header2">
-    <div class="header2_overview"><a href="affiliates-program.html">Overview</a> </div> 
-    <div class="header2_application"><a href="https://docs.google.com/forms/d/e/1FAIpQLSfP43IciQ5cH0JhTf1fDgUpwapBx-yD3ybv24pBdiVW7Th5jQ/viewform">Application
-        <svg viewBox="0 0 24 24" color="textSubtle" width="20px" xmlns="http://www.w3.org/2000/svg"><path d="M18 19H6C5.45 19 5 18.55 5 18V6C5 5.45 5.45 5 6 5H11C11.55 5 12 4.55 12 4C12 3.45 11.55 3 11 3H5C3.89 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V13C21 12.45 20.55 12 20 12C19.45 12 19 12.45 19 13V18C19 18.55 18.55 19 18 19ZM14 4C14 4.55 14.45 5 15 5H17.59L8.46 14.13C8.07 14.52 8.07 15.15 8.46 15.54C8.85 15.93 9.48 15.93 9.87 15.54L19 6.41V9C19 9.55 19.45 10 20 10C20.55 10 21 9.55 21 9V4C21 3.45 20.55 3 20 3H15C14.45 3 14 3.45 14 4Z"></path></svg>
-    </a></div>
+      <div class="header2_overview">
+        <a href="affiliates-program.html">Overview</a>
+      </div>
+      <div class="header2_application">
+        <a
+          href="https://docs.google.com/forms/d/e/1FAIpQLSfP43IciQ5cH0JhTf1fDgUpwapBx-yD3ybv24pBdiVW7Th5jQ/viewform"
+          target="_blank">Application
+          <svg
+            viewBox="0 0 24 24"
+            color="textSubtle"
+            width="20px"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M18 19H6C5.45 19 5 18.55 5 18V6C5 5.45 5.45 5 6 5H11C11.55 5 12 4.55 12 4C12 3.45 11.55 3 11 3H5C3.89 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V13C21 12.45 20.55 12 20 12C19.45 12 19 12.45 19 13V18C19 18.55 18.55 19 18 19ZM14 4C14 4.55 14.45 5 15 5H17.59L8.46 14.13C8.07 14.52 8.07 15.15 8.46 15.54C8.85 15.93 9.48 15.93 9.87 15.54L19 6.41V9C19 9.55 19.45 10 20 10C20.55 10 21 9.55 21 9V4C21 3.45 20.55 3 20 3H15C14.45 3 14 3.45 14 4Z"
+            ></path>
+          </svg>
+        </a>
+      </div>
     </div>
 
     <div class="container_section1">
-        <div class="parent_section1">
-            <div class="section1">
-                <div class="section1_floating">
-                    <img id="floimg1" src="images/affi-bobbing-1.png">
-                    <img id="floimg2" src="images/affi-bobbing-2.png">
-                    <img id="floimg3" src="images/affi-bobbing-3.png">
-                </div>
-                <div class="section1_left">
-                    <img src="images/affi_banner.webp" >
-                </div>
-                <div class="section1_right">
-                    <div class="section1_right_a">Affiliate with us, Empower DeFi</div>
-                    <div class="section1_right_b">Join a community-driven movement to make DeFi accessible and better for everyone</div>
-                    <div class="section1_right_c"><button class="bluebutton">
-                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfP43IciQ5cH0JhTf1fDgUpwapBx-yD3ybv24pBdiVW7Th5jQ/viewform"
-                        class="button_anchor">Join our Affiliate Program</a>
-                    </button>
-                    <button class="transbutton">
-                        <a href="/affiliates-program.html/#affiliate-benefits"
-                        class="trans_anchor">Discover your Potential</a>
-                    </button>
-                </div>         
-                </div>
+      <div class="parent_section1">
+        <div class="section1">
+          <div class="section1_floating">
+            <img id="floimg1" src="images/affi-bobbing-1.png" />
+            <img id="floimg2" src="images/affi-bobbing-2.png" />
+            <img id="floimg3" src="images/affi-bobbing-3.png" />
+          </div>
+          <div class="section1_left">
+            <img src="images/affi_banner.webp" />
+          </div>
+          <div class="section1_right">
+            <div class="section1_right_a">Affiliate with us, Empower DeFi</div>
+            <div class="section1_right_b">
+              Join a community-driven movement to make DeFi accessible and
+              better for everyone
             </div>
+            <div class="section1_right_c">
+              <button class="bluebutton">
+                <a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSfP43IciQ5cH0JhTf1fDgUpwapBx-yD3ybv24pBdiVW7Th5jQ/viewform"
+                  class="button_anchor"
+                  target="_blank" >Join our Affiliate Program</a
+                >
+              </button>
+              <button class="transbutton">
+                <a
+                  href="/affiliates-program.html/#affiliate-benefits"
+                  class="trans_anchor"
+                  >Discover your Potential</a
+                >
+              </button>
+            </div>
+          </div>
         </div>
-        
+      </div>
     </div>
 
-    <div class="div4_parent_container" style="background: black;">
-        <div class="div4_container">
-            <div class="div4">
-            <img class="div4_svg1" src="/images/div4_1.svg" style="width: 36px; height: 36px;">
-            <h2 id="div4_text1">Good things</h2>
-            <h2 id="div4_text2">are meant to be shared</h2>
-            <div id="div4_text3">
-                Together we can make the PancakeSwap community even stronger
-            </div>
-            
-            <div id="div4_text5">
-                How do you Become a PancakeSwap Affiliate?
-            </div>
-            <div class="div4_box1" style="max-width: 888px;">
-                <div class="div4_box2" style="flex: 0.33;">
-                    <div class="div4_box3">
-                        <div class="div4_box4" style="margin-bottom: 42px;">
-                            <div class="div4_box5" style="margin-top: 0px;">
-                                <h2 id="div4_box_a_text1a" style="margin-bottom: 0px; line-height: 1.5;">1</h2>
-                                <h2 class="div4_box_a_text1">Submit</h2>
-                                <h2 id="div4_box_a_text1a" style="margin-bottom: 0px;">Your</h2>
-                                <h2 id="div4_box_a_text1a">Application</h2>
-                                <div class="div4_box_a_text1b" style="font-size: 14px; line-height: 1.5;">It's fast, easy, and completely free</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="div4_box2" style="flex: 0.33;">
-                    <div class="div4_box3">
-                        <div class="div4_box4">
-                            <div class="div4_box5" style="margin-top: 0px;">
-                                <h2 id="div4_box_a_text2a" style="margin-bottom: 0px; line-height: 1.5">2</h2>
-                                <h2 class="div4_box_a_text1">Share</h2>
-                                <h2 id="div4_box_a_text2a" style="margin-bottom: 0px;">Your</h2>
-                                <h2 id="div4_box_a_text2a">Love</h2>
-                                <div class="div4_box_a_text1b" style="font-size: 14px; line-height: 1.5;">Share your unique affiliate link with your friends, followers, and anyone who loves a good adventure</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="div4_box2" style="flex: 0.33;">
-                    <div class="div4_box3">
-                        <div class="div4_box4" style="margin-bottom: 22px;">
-                            <div class="div4_box5" style="margin-right: 30px; margin-top: 0px; width: 285px;">
-                                <h2 id="div4_box_a_text3a" style="margin-bottom: 0px; line-height: 1.5">3</h2>
-                                <h2 class="div4_box_a_text1">Start</h2>
-                                <h2 class="div4_box_a_text1" style="margin-bottom: 0px;">Earning</h2>
-                                <h2 id="div4_box_a_text3a">CAKE</h2>
-                                <div class="div4_box_a_text1b" style="font-size: 14px; line-height: 1.5;">Earn up to 20% referral commissions</div>
-                                <div class="div4_box_a_text1b" style="font-size: 14px; line-height: 1.5;">in CAKE</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <div class="div4_parent_container" style="background: black">
+      <div class="div4_container">
+        <div class="div4">
+          <img
+            class="div4_svg1"
+            src="/images/div4_1.svg"
+            style="width: 36px; height: 36px"
+          />
+          <h2 id="div4_text1">Good things</h2>
+          <h2 id="div4_text2">are meant to be shared</h2>
+          <div id="div4_text3">
+            Together we can make the PancakeSwap community even stronger
+          </div>
 
+          <div id="div4_text5">How do you Become a PancakeSwap Affiliate?</div>
+          <div class="div4_box1" style="max-width: 888px">
+            <div class="div4_box2" style="flex: 0.33">
+              <div class="div4_box3">
+                <div class="div4_box4" style="margin-bottom: 42px">
+                  <div class="div4_box5" style="margin-top: 0px">
+                    <h2
+                      id="div4_box_a_text1a"
+                      style="margin-bottom: 0px; line-height: 1.5"
+                    >
+                      1
+                    </h2>
+                    <h2 class="div4_box_a_text1">Submit</h2>
+                    <h2 id="div4_box_a_text1a" style="margin-bottom: 0px">
+                      Your
+                    </h2>
+                    <h2 id="div4_box_a_text1a">Application</h2>
+                    <div
+                      class="div4_box_a_text1b"
+                      style="font-size: 14px; line-height: 1.5"
+                    >
+                      It's fast, easy, and completely free
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+            <div class="div4_box2" style="flex: 0.33">
+              <div class="div4_box3">
+                <div class="div4_box4">
+                  <div class="div4_box5" style="margin-top: 0px">
+                    <h2
+                      id="div4_box_a_text2a"
+                      style="margin-bottom: 0px; line-height: 1.5"
+                    >
+                      2
+                    </h2>
+                    <h2 class="div4_box_a_text1">Share</h2>
+                    <h2 id="div4_box_a_text2a" style="margin-bottom: 0px">
+                      Your
+                    </h2>
+                    <h2 id="div4_box_a_text2a">Love</h2>
+                    <div
+                      class="div4_box_a_text1b"
+                      style="font-size: 14px; line-height: 1.5"
+                    >
+                      Share your unique affiliate link with your friends,
+                      followers, and anyone who loves a good adventure
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="div4_box2" style="flex: 0.33">
+              <div class="div4_box3">
+                <div class="div4_box4" style="margin-bottom: 22px">
+                  <div
+                    class="div4_box5"
+                    style="margin-right: 30px; margin-top: 0px; width: 285px"
+                  >
+                    <h2
+                      id="div4_box_a_text3a"
+                      style="margin-bottom: 0px; line-height: 1.5"
+                    >
+                      3
+                    </h2>
+                    <h2 class="div4_box_a_text1">Start</h2>
+                    <h2 class="div4_box_a_text1" style="margin-bottom: 0px">
+                      Earning
+                    </h2>
+                    <h2 id="div4_box_a_text3a">CAKE</h2>
+                    <div
+                      class="div4_box_a_text1b"
+                      style="font-size: 14px; line-height: 1.5"
+                    >
+                      Earn up to 20% referral commissions
+                    </div>
+                    <div
+                      class="div4_box_a_text1b"
+                      style="font-size: 14px; line-height: 1.5"
+                    >
+                      in CAKE
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
 
     <div class="container_section3">
-        <div class="trans_section2_3"></div>
-        <div class="parent_section3">
-            <div class="section3">
-                <div class="section3_top_container">
-                    <div class="section3_top">
-                        <div class="section3_top_1">Join PancakeSwap's Community and Make a Difference</div>
-                        <div class="section3_top_2">As an affiliate, you'll be part of a network of like-minded individuals who are committed to build a stronger DeFi community. Be part of something bigger with PancakeSwap's Affiliate program</div>
-                        <button class="bluebutton" id="centered_bb"> 
-                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfP43IciQ5cH0JhTf1fDgUpwapBx-yD3ybv24pBdiVW7Th5jQ/viewform"
-                            class="button_anchor">Join Now!</a>
-                        </button>
-                    </div>
-                </div>
-                <div class="section3_bottom">
-                    <div class="section3_bottom_1">
-                        <div class="section3_bottom_1a">Commission Structure</div>
-                        <div class="section3_bottom_1b">Invite and earn commission for every successful referral</div>
-                    </div>
-                    <div class="section3_bottom_2">
-                        <div class="section3_bottom_2a">
-                            <div class="section3_bottom_2a_x">
-                                <img src="images/affi_sec3_1.png">
-                            </div>
-                            <div class="section3_bottom_2a_y">
-                                <div class="section3_bottom_2a_y1">SWAP & STABLESWAP</div>
-                                <div class="section3_bottom_2a_y2">3%</div>
-                            </div>
-                        </div>
-                        <div class="section3_bottom_2b">
-                            <div class="section3_bottom_2b_x">
-                                <img src="images/affi_sec3_2.png">
-                            </div>
-                            <div class="section3_bottom_2b_y">
-                                <div class="section3_bottom_2b_y1">PERPETUAL</div>
-                                <div class="section3_bottom_2b_y2">20%</div>
-                            </div>
-                        </div>
-                        <div class="section3_bottom_2c">
-                            <div class="section3_bottom_2c_x">
-                                <img src="images/affi_sec3_3.png">
-                            </div>
-                            <div class="section3_bottom_2c_y">
-                                <div class="section3_bottom_2c_y1">COMING SOON!</div>
-                                <div class="section3_bottom_2c_y2">?</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      <div class="trans_section2_3"></div>
+      <div class="parent_section3">
+        <div class="section3">
+          <div class="section3_top_container">
+            <div class="section3_top">
+              <div class="section3_top_1">
+                Join PancakeSwap's Community and Make a Difference
+              </div>
+              <div class="section3_top_2">
+                As an affiliate, you'll be part of a network of like-minded
+                individuals who are committed to build a stronger DeFi
+                community. Be part of something bigger with PancakeSwap's
+                Affiliate program
+              </div>
+              <button class="bluebutton" id="centered_bb">
+                <a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSfP43IciQ5cH0JhTf1fDgUpwapBx-yD3ybv24pBdiVW7Th5jQ/viewform"
+                  class="button_anchor" target="_blank"
+                  >Join Now!</a
+                >
+              </button>
             </div>
+          </div>
+          <div class="section3_bottom">
+            <div class="section3_bottom_1">
+              <div class="section3_bottom_1a">Commission Structure</div>
+              <div class="section3_bottom_1b">
+                Invite and earn commission for every successful referral
+              </div>
+            </div>
+            <div class="section3_bottom_2">
+              <div class="section3_bottom_2a">
+                <div class="section3_bottom_2a_x">
+                  <img src="images/affi_sec3_1.png" />
+                </div>
+                <div class="section3_bottom_2a_y">
+                  <div class="section3_bottom_2a_y1">SWAP & STABLESWAP</div>
+                  <div class="section3_bottom_2a_y2">3%</div>
+                </div>
+              </div>
+              <div class="section3_bottom_2b">
+                <div class="section3_bottom_2b_x">
+                  <img src="images/affi_sec3_2.png" />
+                </div>
+                <div class="section3_bottom_2b_y">
+                  <div class="section3_bottom_2b_y1">PERPETUAL</div>
+                  <div class="section3_bottom_2b_y2">20%</div>
+                </div>
+              </div>
+              <div class="section3_bottom_2c">
+                <div class="section3_bottom_2c_x">
+                  <img src="images/affi_sec3_3.png" />
+                </div>
+                <div class="section3_bottom_2c_y">
+                  <div class="section3_bottom_2c_y1">COMING SOON!</div>
+                  <div class="section3_bottom_2c_y2">?</div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
 
-    <div class="div4_parent_container" style="background: black; padding-top: 0px;">
-        <div class="trans_section3_4"></div>
-        <div class="div4_container" style="padding-top: 14px;">
-            <div class="div4">
-                <img class="div4_svg1" src="/images/div4_1.svg" style="width: 36px; height: 36px;">
-                <h2 id="div4_text1">Unlock the Power of PancakeSwap</h2>
-                <h2 id="div4_text2" style="margin: 0px;">Affiliate Benefits</h2>
-            </div>
-            <div class="section4">
-                <div class="section4_box_imgtext">
-                    <div class="section4_box_img"><img src="images/affi_sec4_1.webp"></div>
-                    <div class="section4_box_text">
-                        <div class="section4_box_right_top">Partner with the Leading Brand in the Industry</div>
-                        <div class="section4_box_right_bot">Forge a partnership with the most reputable global brand in the industry to make DeFi accessible and better for everyone</div>
-                    </div>
-                </div>
-                <div class="section4_box_textimg">
-                    <div class="section4_box_text">
-                        <div class="section4_box_right_top">User Friendly Platform</div>
-                        <div class="section4_box_right_bot">Provide a seamless experience for your referrals with our user friendly platform</div>
-                    </div>
-                    <div class="section4_box_img"><img src="images/affi_sec4_2.webp"></div>
-                </div>
-                <div class="section4_box_imgtext">
-                    <div class="section4_box_img"><img src="images/affi_sec4_3.webp"></div>
-                    <div class="section4_box_text">
-                        <div class="section4_box_right_top">Customize Profit-Sharing</div>
-                        <div class="section4_box_right_bot">Share the rewards with your community</div>
-                    </div>
-                </div>
-                <div class="section4_box_textimg">
-                    <div class="section4_box_text">
-                        <div class="section4_box_right_top">Real-Time Reporting</div>
-                        <div class="section4_box_right_bot">Easily keep tabs on commission and earnings with our user-friendly dashboard</div>
-                    </div>
-                    <div class="section4_box_img"><img src="images/affi_sec4_4.webp"></div>
-                </div>
-                <div class="section4_box_imgtext">
-                    <div class="section4_box_img"><img src="images/affi_sec4_5.webp"></div>
-                    <div class="section4_box_text">
-                        <div class="section4_box_right_top">Personalized Support</div>
-                        <div class="section4_box_right_bot">Personalized assistance from our community managers</div>
-                    </div>
-                </div>
-            </div>
+    <div
+      class="div4_parent_container"
+      style="background: black; padding-top: 0px"
+    >
+      <div class="trans_section3_4"></div>
+      <div class="div4_container" style="padding-top: 14px">
+        <div class="div4">
+          <img
+            class="div4_svg1"
+            src="/images/div4_1.svg"
+            style="width: 36px; height: 36px"
+          />
+          <h2 id="div4_text1">Unlock the Power of PancakeSwap</h2>
+          <h2 id="div4_text2" style="margin: 0px">Affiliate Benefits</h2>
         </div>
+        <div class="section4">
+          <div class="section4_box_imgtext">
+            <div class="section4_box_img">
+              <img src="images/affi_sec4_1.webp" />
+            </div>
+            <div class="section4_box_text">
+              <div class="section4_box_right_top">
+                Partner with the Leading Brand in the Industry
+              </div>
+              <div class="section4_box_right_bot">
+                Forge a partnership with the most reputable global brand in the
+                industry to make DeFi accessible and better for everyone
+              </div>
+            </div>
+          </div>
+          <div class="section4_box_textimg">
+            <div class="section4_box_text">
+              <div class="section4_box_right_top">User Friendly Platform</div>
+              <div class="section4_box_right_bot">
+                Provide a seamless experience for your referrals with our user
+                friendly platform
+              </div>
+            </div>
+            <div class="section4_box_img">
+              <img src="images/affi_sec4_2.webp" />
+            </div>
+          </div>
+          <div class="section4_box_imgtext">
+            <div class="section4_box_img">
+              <img src="images/affi_sec4_3.webp" />
+            </div>
+            <div class="section4_box_text">
+              <div class="section4_box_right_top">Customize Profit-Sharing</div>
+              <div class="section4_box_right_bot">
+                Share the rewards with your community
+              </div>
+            </div>
+          </div>
+          <div class="section4_box_textimg">
+            <div class="section4_box_text">
+              <div class="section4_box_right_top">Real-Time Reporting</div>
+              <div class="section4_box_right_bot">
+                Easily keep tabs on commission and earnings with our
+                user-friendly dashboard
+              </div>
+            </div>
+            <div class="section4_box_img">
+              <img src="images/affi_sec4_4.webp" />
+            </div>
+          </div>
+          <div class="section4_box_imgtext">
+            <div class="section4_box_img">
+              <img src="images/affi_sec4_5.webp" />
+            </div>
+            <div class="section4_box_text">
+              <div class="section4_box_right_top">Personalized Support</div>
+              <div class="section4_box_right_bot">
+                Personalized assistance from our community managers
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="container_section5">
-        <div class="trans_section4_5"></div>
-        <div class="parent_section5">
-            <div class="section5_box">
-                <div class="section5">
-                    <div class="section5_header">
-                        Still Got Questions?
+      <div class="trans_section4_5"></div>
+      <div class="parent_section5">
+        <div class="section5_box">
+          <div class="section5">
+            <div class="section5_header">Still Got Questions?</div>
+            <div class="section5_faq">
+              <div class="section5_faq_header">
+                <h2>FAQ</h2>
+              </div>
+              <div class="section5_faq_bottom">
+                <div class="section5_faq_q_box">
+                  <div class="faq_toprow" id="faqtoggle1">
+                    <div class="faq_toprow_q">
+                      What is the criteria to become a PancakeSwap affiliate?
                     </div>
-                    <div class="section5_faq">
-                        <div class="section5_faq_header"><h2>FAQ</h2></div>
-                        <div class="section5_faq_bottom">
-                            <div class="section5_faq_q_box">
-                                <div class="faq_toprow" id="faqtoggle1">
-                                    <div class="faq_toprow_q">What is the criteria to become a PancakeSwap affiliate?</div>
-                                    <div class="faq_button_area">
-                                        <button id="faqbutton1">Details<img src='images/affi_down_arrow.svg' style='margin-left:8px;top:5px;position:relative;'></button>
-                                    </div>
-                                </div>
-                                <div class="faq_hiddenrow" id="hiddenrow1">
-                                    <div class="hiddenrow_text"><div class="dash">-</div>At least 10,000 followers across social media platforms such as Twitter, Youtube, Discord, Instagram and Telegram</div>
-                                    <div class="hiddenrow_text"><div class="dash">-</div>Proven track record of creating quality content related to crypto and especially DeFi</div>
-                                    <div class="hiddenrow_text"><div class="dash">-</div>Strong understanding of PancakeSwap and our ecosystem</div>
-                                </div>
-                            </div>
-                            <div class="section5_faq_q_box">
-                                <div class="faq_toprow"  id="faqtoggle2">
-                                    <div class="faq_toprow_q">How do I earn commissions as an affiliate?</div>
-                                    <div class="faq_button_area">
-                                        <button id="faqbutton2">Details<img src='images/affi_down_arrow.svg' style='margin-left:8px;top:5px;position:relative;'></button>
-                                    </div>
-                                </div>
-                                <div class="faq_hiddenrow" id="hiddenrow2">
-                                    <div class="hiddenrow_text"><div class="dash">-</div>You earn commissions from most trading fees paid by your invitees for a limited period of time</div>
-                                    <div class="hiddenrow_text"><div class="dash">-</div>Trading pairs must meet the following eligibility criteria:</div>
-                                    <div class="hiddenrow_text" style="margin-left: 16px;"><div class="dash">-</div>Pairs must be in “PancakeSwap Extended” Official <a href="https://tokenlists.org/token-list?url=https://tokens.pancakeswap.finance/pancakeswap-extended.json">token list</a></div>
-                                    <div class="hiddenrow_text" style="margin-left: 16px;"><div class="dash">-</div>Pairs must include 1 major token (BNB, BTC, BUSD, ETH, USDT and USDC)</div>
-                                </div>
-                            </div>
-                            <div class="section5_faq_q_box">
-                                <div class="faq_toprow"  id="faqtoggle3">
-                                    <div class="faq_toprow_q">How will I receive my commissions and how often will I be paid?</div>
-                                    <div class="faq_button_area">
-                                        <button id="faqbutton3">Details<img src='images/affi_down_arrow.svg' style='margin-left:8px;top:5px;position:relative;'></button>
-                                    </div>
-                                </div>
-                                <div class="faq_hiddenrow" id="hiddenrow3">
-                                    <div class="hiddenrow_text"><div class="dash">-</div>You will receive your commissions on a monthly basis. This means that you will receive payments for your commissions earned in the previous month at the beginning of each month.</div>
-                                    <div class="hiddenrow_text"><div class="dash">-</div>You will be able to redeem your CAKE rewards from the affiliate dashboard page. Once redeemed, PancakeSwap will transfer the commission amount earned to your designated wallet. You will be able to see the details of each payment in your affiliate dashboard, including the amount, date, and status of each payment.</div>
-                                </div>
-                            </div>
-                            <div class="section5_faq_q_box">
-                                <div class="faq_toprow"  id="faqtoggle4">
-                                    <div class="faq_toprow_q">How do I track my referrals and commissions?</div>
-                                    <div class="faq_button_area">
-                                        <button id="faqbutton4">Details<img src='images/affi_down_arrow.svg' style='margin-left:8px;top:5px;position:relative;'></button>
-                                    </div>
-                                </div>
-                                <div class="faq_hiddenrow" id="hiddenrow4">
-                                    <div class="hiddenrow_text"><div class="dash">-</div>Affiliates can login to the affiliate dashboard and view your referral and commission information</div>
-                                    <div class="hiddenrow_text"><div class="dash">-</div>Your referrals will be listed in your affiliate dashboard, along with the date they were made, their status, and the commission amount earned</div>
-                                </div>
-                            </div>
-                            <div class="section5_faq_q_box">
-                                <div class="faq_toprow"  id="faqtoggle5">
-                                    <div class="faq_toprow_q">Is there a limited number of referrals i can refer?</div>
-                                    <div class="faq_button_area">
-                                        <button id="faqbutton5">Details<img src='images/affi_down_arrow.svg' style='margin-left:8px;top:5px;position:relative;'></button>
-                                    </div>
-                                </div>
-                                <div class="faq_hiddenrow" id="hiddenrow5">
-                                    <div class="hiddenrow_text"><div class="dash">-</div>No, users can refer as many friends as they wish</div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="faq_button_area">
+                      <button id="faqbutton1">
+                        Details<img
+                          src="images/affi_down_arrow.svg"
+                          style="margin-left: 8px; top: 5px; position: relative"
+                        />
+                      </button>
                     </div>
+                  </div>
+                  <div class="faq_hiddenrow" id="hiddenrow1">
+                    <div class="hiddenrow_text">
+                      <div class="dash">-</div>
+                      At least 10,000 followers across social media platforms
+                      such as Twitter, Youtube, Discord, Instagram and Telegram
+                    </div>
+                    <div class="hiddenrow_text">
+                      <div class="dash">-</div>
+                      Proven track record of creating quality content related to
+                      crypto and especially DeFi
+                    </div>
+                    <div class="hiddenrow_text">
+                      <div class="dash">-</div>
+                      Strong understanding of PancakeSwap and our ecosystem
+                    </div>
+                  </div>
                 </div>
+                <div class="section5_faq_q_box">
+                  <div class="faq_toprow" id="faqtoggle2">
+                    <div class="faq_toprow_q">
+                      How do I earn commissions as an affiliate?
+                    </div>
+                    <div class="faq_button_area">
+                      <button id="faqbutton2">
+                        Details<img
+                          src="images/affi_down_arrow.svg"
+                          style="margin-left: 8px; top: 5px; position: relative"
+                        />
+                      </button>
+                    </div>
+                  </div>
+                  <div class="faq_hiddenrow" id="hiddenrow2">
+                    <div class="hiddenrow_text">
+                      <div class="dash">-</div>
+                      You earn commissions from most trading fees paid by your
+                      invitees for a limited period of time
+                    </div>
+                    <div class="hiddenrow_text">
+                      <div class="dash">-</div>
+                      Trading pairs must meet the following eligibility
+                      criteria:
+                    </div>
+                    <div class="hiddenrow_text" style="margin-left: 16px">
+                      <div class="dash">-</div>
+                      Pairs must be in “PancakeSwap Extended” Official
+                      <a
+                        href="https://tokenlists.org/token-list?url=https://tokens.pancakeswap.finance/pancakeswap-extended.json"
+                        >token list</a
+                      >
+                    </div>
+                    <div class="hiddenrow_text" style="margin-left: 16px">
+                      <div class="dash">-</div>
+                      Pairs must include 1 major token (BNB, BTC, BUSD, ETH,
+                      USDT and USDC)
+                    </div>
+                  </div>
+                </div>
+                <div class="section5_faq_q_box">
+                  <div class="faq_toprow" id="faqtoggle3">
+                    <div class="faq_toprow_q">
+                      How will I receive my commissions and how often will I be
+                      paid?
+                    </div>
+                    <div class="faq_button_area">
+                      <button id="faqbutton3">
+                        Details<img
+                          src="images/affi_down_arrow.svg"
+                          style="margin-left: 8px; top: 5px; position: relative"
+                        />
+                      </button>
+                    </div>
+                  </div>
+                  <div class="faq_hiddenrow" id="hiddenrow3">
+                    <div class="hiddenrow_text">
+                      <div class="dash">-</div>
+                      You will receive your commissions on a monthly basis. This
+                      means that you will receive payments for your commissions
+                      earned in the previous month at the beginning of each
+                      month.
+                    </div>
+                    <div class="hiddenrow_text">
+                      <div class="dash">-</div>
+                      You will be able to redeem your CAKE rewards from the
+                      affiliate dashboard page. Once redeemed, PancakeSwap will
+                      transfer the commission amount earned to your designated
+                      wallet. You will be able to see the details of each
+                      payment in your affiliate dashboard, including the amount,
+                      date, and status of each payment.
+                    </div>
+                  </div>
+                </div>
+                <div class="section5_faq_q_box">
+                  <div class="faq_toprow" id="faqtoggle4">
+                    <div class="faq_toprow_q">
+                      How do I track my referrals and commissions?
+                    </div>
+                    <div class="faq_button_area">
+                      <button id="faqbutton4">
+                        Details<img
+                          src="images/affi_down_arrow.svg"
+                          style="margin-left: 8px; top: 5px; position: relative"
+                        />
+                      </button>
+                    </div>
+                  </div>
+                  <div class="faq_hiddenrow" id="hiddenrow4">
+                    <div class="hiddenrow_text">
+                      <div class="dash">-</div>
+                      Affiliates can login to the affiliate dashboard and view
+                      your referral and commission information
+                    </div>
+                    <div class="hiddenrow_text">
+                      <div class="dash">-</div>
+                      Your referrals will be listed in your affiliate dashboard,
+                      along with the date they were made, their status, and the
+                      commission amount earned
+                    </div>
+                  </div>
+                </div>
+                <div class="section5_faq_q_box">
+                  <div class="faq_toprow" id="faqtoggle5">
+                    <div class="faq_toprow_q">
+                      Is there a limited number of referrals i can refer?
+                    </div>
+                    <div class="faq_button_area">
+                      <button id="faqbutton5">
+                        Details<img
+                          src="images/affi_down_arrow.svg"
+                          style="margin-left: 8px; top: 5px; position: relative"
+                        />
+                      </button>
+                    </div>
+                  </div>
+                  <div class="faq_hiddenrow" id="hiddenrow5">
+                    <div class="hiddenrow_text">
+                      <div class="dash">-</div>
+                      No, users can refer as many friends as they wish
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </div>
     <footer></footer>
     <script src="scripts/affiliates.js"></script>
-</body>
+  </body>
 </html>
