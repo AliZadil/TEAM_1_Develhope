@@ -2514,6 +2514,7 @@ body {
 }
 
 .many1 {
+    max-width: 1200px;
     visibility: visible;
     overflow: hidden;
     position: absolute;
@@ -2839,11 +2840,6 @@ a{
     text-decoration: none;
 }
 
-#div10 .pancklogo {
-    width: 160px;
-    fill: #f4eeff;
-}
-
 #div10 #announcements {
     position: relative;
 }
@@ -2893,7 +2889,6 @@ a{
     transform: translate(0px);
     position: relative;
     will-change: opacity;
-    opacity: 0;
     display: block;
 }
 
