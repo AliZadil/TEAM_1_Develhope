@@ -17,9 +17,21 @@
   color: rgb(154, 106, 255);
 }
 
-.main {
+.swap-main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  padding-left: 32px;
+  padding-top: 32px;
+  padding-right: 32px;
+}
+.swap-main .swap-images {
+  width: 100%;
+  justify-content: space-between;
   display: flex;
   flex-direction: row;
-  width: 100%;
-  padding: 24px;
+  height: auto;
+  align-items: center;
+  padding-top: 16px;
 }/*# sourceMappingURL=swap.css.map */
