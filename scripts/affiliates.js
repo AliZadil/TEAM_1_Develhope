@@ -72,3 +72,16 @@ toggleHidden5.addEventListener("click", function() {
     detailsButton5.innerHTML = "Details<img src='images/affi-images/affi_down_arrow.svg' style='margin-left:8px;top:5px;position:relative;'>";
   }
 });
+
+//pageup-button
+
+const pageUp = document.querySelector(".page-up");
+
+window.addEventListener("scroll", () => {
+  if (window.pageYOffset > 450) {
+    pageUp.style.display = "flex";
+    pageUp.style.visibility =  "visible";
+  } else {
+    pageUp.style.display = 'none';
+  }
+});
