@@ -15,7 +15,8 @@
     display: none;
     transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
     justify-content: center;
-    z-index: 9999;
+    align-items: center;
+    z-index: 9999999999;
     opacity: 1;
   }
 
@@ -110,7 +111,7 @@ body {
     max-width: 100%;
 }
 .mbNavbar{
-    display: flex;
+    display: none;
     position: fixed;
     bottom: 0;
     justify-content: space-between;
@@ -247,6 +248,9 @@ body {
     #btn_\(\.\.\.\ \.\){
         display: none;
     }
+    .mbNavbar{
+        display: flex;
+    }
 }
 
 .opt_kids {
@@ -272,7 +276,7 @@ body {
     top: 3.7rem;
     border-radius: 1.2rem;
     color: #b8add2;
-    z-index: 1;
+    z-index: 5;
 }
 
 #options2 {
@@ -1718,34 +1722,21 @@ body {
 
 /* div_6 */
 #div6earnpassive{
-    background-color: rgb(82, 74, 96);
+    background: linear-gradient(166.77deg,#3b4155,#3a3045);
     color:white;
-    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+    padding-bottom: 50px;
     }
 
-    @media(max-width: 1000px){
-        #div6images{
-            width: 100px;
-            height: 100px;
-            position: relative;
-            right: 10px;
-            top: 15px;
-            }
-        #div6content{
-            display: flex;
-            justify-content: flex-start;
-        }
-        .div6space{
-            width: 0;
-        }
-        #div6columns{
-            display: flex;
-            justify-content: space-evenly;
-        }
-        
-    }
-      section#div6upperpart{
+      #div6upperpart{
       display: flex;
+      justify-content:space-evenly;
+      max-width: 1200px;
+      flex: 1 1;
+      margin-bottom: 30px;
       }
     
        .div6images{
@@ -1766,11 +1757,21 @@ body {
        animation-name: pieimg;
        animation-duration: 4s;
        animation-iteration-count: infinite;
+                 animation-direction: normal;
+                animation-fill-mode: none;
+                animation-play-state: running;
+                animation-timing-function: ease-in-out;
               }
               @keyframes pieimg{
-       0%{left:0px; top:0px;}
-       50%{left: 0px; top:20px;}
-       100%{left:0px; top: 0px;}
+                0%{
+                    transform: translate(0px, 0px);
+                }
+                50%{
+                    transform: translate(0px, 20px);
+                }
+                100%{
+                    transform: translate(0px, 0px);
+                }
               }
               #div6stonksimg{
        position:absolute;
@@ -1780,11 +1781,21 @@ body {
        animation-duration: 4s;
        animation-delay: 1s;
        animation-iteration-count: infinite;
+                 animation-direction: normal;
+                animation-fill-mode: none;
+                animation-play-state: running;
+                animation-timing-function: ease-in-out;
               }
               @keyframes stonksimg{
-       0%{left:0px; top:0px;}
-       50%{left: 10px; top:20px;}
-       100%{left:0px; top: 0px;}
+                0%{
+                    transform: translate(0px, 0px);
+                }
+                50%{
+                    transform: translate(10px, 20px);
+                }
+                100%{
+                    transform: translate(0px, 0px);
+                }
               }
               #div6folderimg{
        position:absolute;
@@ -1794,46 +1805,63 @@ body {
        animation-duration: 5s;
        animation-delay: 2s;
        animation-iteration-count: infinite;
+                 animation-direction: normal;
+                animation-fill-mode: none;
+                animation-play-state: running;
+                animation-timing-function: ease-in-out;
+       
               }
               @keyframes folderimg{
-       0%{left:0px; top:0px;}
-       50%{left: 20px; top:10px;}
-       100%{left:0px; top: 0px;}
+                0%{
+                    transform: translate(0px, 0px);
+                }
+                50%{
+                    transform: translate(20px, 10px);
+                }
+                100%{
+                    transform: translate(0px, 0px);
+                }
               }
     
     
         .div6content{
-          flex-basis: 200px;
           flex: 1 1 50%;
           align-self: center;
           padding-bottom: 100px;
           font-size: 150%;  
          }   
              .div6purple{
-             color:rgb(155, 100, 181);
+             color:#9A6AFF;
+                 margin: 0;
+                 padding: 0;
             }
     
-            .div6space{
-             width: 20%;
-             height: 500px;
-            }
             #div6text1{
-               font-weight: bold;
+                font-size: 40px;
+                font-weight: 600;
+                line-height: 1.1;
             }
             #div6text2{
-               color:rgb(157, 157, 183);
-               font-size: medium;
-               font-weight: bold;
+               color:#b8add2;
+               font-size: 16px;
+               font-weight: 400;
+               margin-bottom: 24px;
+               line-height: 1.5;
             }
     
             #div6explore{
             background-color: rgb(45, 224, 224);
             color:black;
             font-weight: bold;
-            width: 90px;
-            height: 40px;
+            height: 48px;
             border: 0px;
             border-radius: 13px;
+            margin-right: 16px;
+            padding: 0px 24px;
+           }
+           #div6_content_bottom {
+            display: flex;
+            align-items: center;
            }
             #div6learn{
             color: rgb(154, 255, 255);
@@ -1841,147 +1869,177 @@ body {
             font-size: 70%;
             }
             #div6svglearn{
+            top: 5px;
             fill:rgb(45, 224, 224);
             }
-    
-      
+            #div6_learn {
+                font-weight: 600;
+                line-height: 1.5;
+                font-size: 16px;
+            }
+            #div6_explore {
+                font-weight: 600;
+                line-height: 1.5;
+                font-size: 16px;
+                box-shadow: rgba(14, 14, 44, 0.4) 0px -1px 0px 0px inset;
+                height: 48px;
+            }
+            
+        .div6_child {
+            display: flex;
+            flex-direction: column;
+        }
+
         .div6topsyruppools{
            align-self: center;
+           min-width: 968px;
            height: 170px;
-           padding-left: 20%;
-           padding-right: 20%;
-           display: grid;
-           font-size: small;
-           gap: 5px;
-           grid-template-rows: 30px 70px 70px;
-          grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
           }
-    
-            #div6line1{
-            color:rgb(155, 100, 181);
+
+
+            .div6line1{
+            color:#9a6aff;
+            font-size: 13px;
+            font-weight: 600;
+            line-height: 1.5;
             }
     
-           #div6syruppools{
-            font-size: 70%;
+         
+           #div6_switch{
+            background-color: transparent;
+            color: rgb(189, 19, 19);
+            border: 0px;
+            cursor: pointer;
             }
-          .div6topsyruppools #div6topsyruppoolstext{
+            #div6_switch:hover{
+                transition: opacity 0.5s ease;
+                opacity: 0.7;
+            }
+
+            #div6_visible {
+            display: grid;
+            font-size: small;
+            gap: 5px;
+            grid-template-rows: 100px;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            transition: opacity 0s ease 0s, margin-top 0s ease 0s, all 0.4s ease-out 0s;
+            }
+            #div6_hidden {
+            display: none;
+            font-size: small;
+            gap: 5px;
+            grid-template-rows: 100px;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            transition: opacity 0s ease 0s, margin-top 0s ease 0s, all 0.4s ease-out 0s;
+            }
+
+            .div6firstc{
             grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            padding-left: 50px;
+            margin: 0px;
+            }
+    
+            .div6secondc{
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            padding-left: 20px;
+            border-left: 1px solid black;
+            margin: 0px;
+            }
+            .div6thirdc{
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            border-left: 1px solid black;
+            padding-left: 20px;
+            margin: 0px;
+            }
+            .div6forthc{
+            grid-column-start: 4;
+            grid-column-end: 5;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            border-left: 1px solid black;
+            padding-left: 20px;
+            margin: 0px;
+            }
+            .div6fifthc{
+            grid-column-start: 5;
             grid-column-end: 6;
             grid-row-start: 1;
             grid-row-end: 2;
+            border-left: 1px solid black;
+            padding-left: 20px;
+            margin: 0px;
             }
-          #div6topsyruppoolstext{
-            font-size: medium;
-            height: 1ch;
+            
+            #aprtext {
+                font-weight: 400;
+                color: #b8add2;
+                line-height: 1;
+                font-size: 16px;
             }
-          button#div6topsyruppoolstext{
-       width: 40px;
-       height: 30px;
-       background-color: rgb(82, 74, 96);
-       color: grey;
-       border: 0px;
+            #aprnumber {
+                font-weight: 600;
+                color: white;
+                line-height: 1;
+                font-size: 16px;
             }
-            .div6topsyruppools #div6firstc{
-            grid-column-start: 1;
-            grid-column-end: 2;
-            grid-row-start: 2;
-            grid-row-end: 3;
+            #options5 > #ooo{
+                color: inherit;
             }
-            .div6topsyruppools #div6secondc{
-            grid-column-start: 2;
-            grid-column-end: 3;
-            grid-row-start: 2;
-            grid-row-end: 3;
+            #options5 > #ifo {
+                color: inherit;
             }
-            .div6topsyruppools #div6thirdc{
-            grid-column-start: 3;
-            grid-column-end: 4;
-            grid-row-start: 2;
-            grid-row-end: 3;
+            #options5 > #o{
+                color: inherit;
             }
-            .div6topsyruppools #div6forthc{
-            grid-column-start: 4;
-            grid-column-end: 5;
-            grid-row-start: 2;
-            grid-row-end: 3;
+            #options1 > a{
+                color: inherit;
             }
-            .div6topsyruppools #div6fifthc{
-            grid-column-start: 5;
-            grid-column-end: 6;
-            grid-row-start: 2;
-            grid-row-end: 3;
-            }
-            .div6topsyruppools #div6sixthc{
-            grid-column-start: 1;
-            grid-column-end: 2;
-            grid-row-start: 3;
-            grid-row-end: 4;
-            }
-            .div6topsyruppools #div6seventhc{
-            grid-column-start: 2;
-            grid-column-end: 3;
-            grid-row-start: 3;
-            grid-row-end: 4;
-            }
-            .div6topsyruppools #div6eighthc{
-            grid-column-start: 3;
-            grid-column-end: 4;
-            grid-row-start: 3;
-            grid-row-end: 4;
-            }
-            .div6topsyruppools #div6ninethc{
-            grid-column-start: 4;
-            grid-column-end: 5;
-            grid-row-start: 3;
-            grid-row-end: 4;
-            }
-            .div6topsyruppools #div6tenthc{
-            grid-column-start: 5;
-            grid-column-end: 6;
-            grid-row-start: 3;
-            grid-row-end: 4;
-            }
-    
     
 /* div_7 */
 
-@media (max-width: 1020px) {
-    #div7ball2, #div7ball6, #div7ball9, #div7ball, #div7ball7, #div7ball4{
-        right: 0px;
-    }
-    #div7frame{
-        width:90%;
-        display: flex;
-        text-align: center;
-        flex-direction: column;
-    }
 
-}
 
-    #div7winmillions{
-    background: linear-gradient(rgb(2, 49, 74), rgb(1, 14, 24));
+    .div7winmillions{
+    background: linear-gradient(180deg,#0b4576 0%,#091115 100%);
     border: rgb(2, 49, 74) solid 1px;
-    width: 100vw;
-    height: 800px;
+        width: 100%;
+    height: 100%;
     position: relative;
+    display: flex;
+    justify-content: center;
+        padding-top: 100px;
+        padding-bottom: 100px;
     }
-       #div7card{
+       .div7card{
            display: flex;
            justify-content: center;
-           margin: 7%;
+           height: auto;
+           align-content: center;
        }
-    
-       #div7frame{
-           background-color: rgb(17, 12, 12, 0.5);
+
+       .div7frame{
+           background-color: rgba(8, 6, 11, 0.6);
            backdrop-filter:blur(10px);
-           width: 70%;
-           height: 600px;
-           border: 1px solid rgb(43, 7, 60);
-           border-radius: 90px;
+           max-width: 920px;
+           width: 100%;
+           height: 100%;
+           padding-left: 160px;
+           padding-right: 160px;
+           border: 1px solid #383241;
+           border-radius: 75px;
            color: white;    
            text-align: center;
-           display: grid;
-           grid-template-rows: 3fr 6fr;
+           display: flex;
+           flex-direction: column;
            z-index: 1;
            }
     
@@ -1995,40 +2053,69 @@ body {
             #div7h1{
                display: flex;
                justify-content: center;
-               margin-bottom: 40px;
+               margin-bottom: 10px;
+               font-size: 40px;
+               font-weight: 600;
+                width: 500px;
             }
             #div7p1{
-               color:gray;
-               height: 1ch;
-               display: flex;
+               color:#b8add2;
+               font-size: 18px;
+               font-weight: 400;
                justify-content: center;
-               margin-top: 15px;
                margin-bottom: 0px;
+                line-height: 24px;
             }
             #div7p2{
-               color:gray;
-               height: 1ch;
-               display: flex;
+               color:#b8add2;
+               font-size: 18px;
+               font-weight: 400;
                justify-content: center;
                margin:0px;
             }
-    
-    
-    
-        #div72cards{
+@media screen and (max-width: 948px) {
+    #div72cards{
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+    #div7yellowcard{
+        rotate: 0deg;
+    }
+    #div7purplecard{
+        rotate: 0deg;
+        margin-left: -20px;
+    }
+    #div7ball2 {
+        width: 150px;
+        height: 150px;
+    }
+    #div7ball6,#div7ball9,#div7ball4,#div7ball7, #div7greencard,#div7bluecard,#div7redcard,#div7greenbottomcard{
+        width: 250px;
+        height: 250px;
+    }
+    #div7h1{
+
+    }
+
+}
+
+        .div72cards{
            display: flex;
+            flex-direction: row;
            justify-content: center;
+            align-items: center;
            padding: 10px;
-           margin-bottom: 15px;
+            width: 100%;
        }
     
-            #div7yellowcard{
-            width: 280px;
-            height: 350px;
-            background: linear-gradient(rgb(252, 194, 47), rgb(253, 223, 89));
-            border-bottom: 4px solid rgb(252, 194, 47);
+            .div7yellowcard{
+            max-width: 320px;
+            max-height: 395px;
+            background: linear-gradient(rgb(255, 178, 55) 0%, rgb(255, 205, 81) 50%, rgb(255, 231, 106) 100%);
+            border-bottom: 3px solid rgb(249, 183, 16);
             border-radius: 25px;
-            rotate: -5deg;
+            rotate: -2.5deg;
             margin-right: 12px;
             display:flex;
             flex-direction: column;
@@ -2037,43 +2124,50 @@ body {
                    width:40px;
                    height: 45px;
                    align-self: flex-end;
-                   rotate: -4deg;
+                   rotate: -2.5deg;
                    margin: 20px;
                    margin-bottom: 5px;
                    align-self: flex-end;
                 }
                 #div7yctext{
-                   color:rgb(99, 56, 138);
-                   margin: 5px;
+                   color:rgb(40, 13, 95);
+                   margin-left: 24px;
                 }
                     #div7yctext1{
-                     font-size: 15px;
-                     margin: 10px; 
+                     font-size: 16px;
+                     line-height: 1.5;
                      text-align: left;
+                     font-weight: 600;
+                     margin-bottom: 0px;
                     }
                     #div7yctext2{
-                       font-size: 40px;
-                       margin: 10px;
-                       text-align: left;
+                        margin-top: 5px;
+                        font-size: 32px;
+                        line-height: 1.1;
+                        text-align: left;
+                        font-weight: 600;
+                        margin-bottom: 0px;
                     }
                     #div7yctext3{
-                     font-size: 15px;
-                     margin: 10px; 
-                     text-align: left;
+                        margin-top: 5px;
+                        font-size: 16px;
+                        line-height: 1.5;
+                        text-align: left;
+                        font-weight: 600;
                     }
                     #div7yctext4{
-                     font-size: 15px;
-                     margin-left: 10px; 
-                     margin-top: 15px;
-                     margin-bottom: 15px;
-                     text-align: left;
+                        font-size: 16px;
+                        line-height: 1.5;
+                        text-align: left;
+                        font-weight: 400;
                     }
               
     
-            #div7purplecard{
-            width: 280px;
-            height: 350px;
-            background-color: rgb(99, 56, 138);
+            .div7purplecard{
+            max-width: 315px;
+            max-height: 390px;
+            background: linear-gradient(rgb(118, 69, 217) 0%, rgb(81, 33, 177) 100%);
+            border-bottom: 4px solid rgb(72, 40, 135);
             border-radius: 25px;
             rotate: 3deg;
             margin-left: 12px;
@@ -2086,196 +2180,299 @@ body {
                    margin-bottom: 5px;
                 }
                 #div7pctext2{
-                   color:rgb(253, 223, 89);
+                   background: linear-gradient(rgb(255, 178, 55) 0%, rgb(255, 205, 81) 50%, rgb(255, 231, 106) 100%);
+                   -webkit-background-clip: text;
+                   -webkit-text-fill-color: transparent;
                    font-size: 40px;
                    text-align: left;
-                   margin: 10px; 
+                   margin: 0px;
+                   font-weight: 600;
+                   margin-left: 24px;
                 }
                 #div7pctext1, #div7pctext3{
                    color: white;
-                   font-size: 15px;
-                   margin: 10px; 
+                   font-size: 16px;
                    margin-top: 5px;
                    margin-bottom: 5px;
                    text-align: left;
+                   font-weight: 600;
+                   margin-top: 0px;
+                   margin-bottom: 0px;
+                   margin-left: 24px;
                 }
+
                 #div7pctext4{
-                   font-size: 15px;
+                   font-size: 16px;
+                   font-weight: 400;
                    margin-left: 10px; 
-                   margin-top: 15px;
+                   margin-top: 25px;
                    margin-right: 10px;
                    margin-bottom: 15px;
                    text-align: left;
+                   margin-left: 24px;
+                   line-height: 1.5;
+                   padding-right: 5px;
                 
                 }
     
-            #div7play, #div7buytickets{
-            background-color: rgb(62, 186, 186);
-            border: 0px;
+            #div7_play, #div7_buytickets {
+            display: flex;
             width: 220px;
             height: 40px;
-            border-radius: 10px;
-            color: black;
-            align-self: center;
             margin: 30px;
+            font-weight: 600;
+            justify-content: center;
+            box-shadow: rgba(14, 14, 44, 0.4) 0px -1px 0px 0px inset;
+            min-height: 45px;
             }  
+            #div7_play svg, #div7_buytickets svg{
+                position: relative;
+                top: 5px;
+            }
     
     
-                 #div7ball2{
+                 .div7ball2{
                  width: 400px;
                  height: 400px;
                  position: absolute;
-                 left:870px;
+                 right:0px;
                  top:0px;
                  order: 1;
                  display: flex;
                  align-self: flex-end;
                  animation-name: ball2;
                  animation-duration: 2s;
+                 animation-timing-function: ease-in-out;
                  animation-delay: 3s;
                  animation-iteration-count: infinite;
+                 animation-direction: normal;
+                animation-fill-mode: none;
+                animation-play-state: running;
                   }
                   @keyframes ball2{
-                 0%{left:900px; top:0px;}
-                 50%{left: 902px; top:10px;}
-                 100%{left:900px; top: 0px;}
-                  }
-                  #div7ball7{
+                        0%{
+                            transform: translate(0px, 0px);
+                        }
+                        50%{
+                            transform: translate(2px, 10px);
+                        }
+                        100%{
+                            transform: translate(0px, 0px);
+                        }
+                    }
+                  .div7ball7{
                  width: 510px;
                  height: 500px;
                  position: absolute;
                  top: 0px;
-                 left: 770px;
+                 right: 0px;
                  animation-name: ball7;
                  animation-duration: 4s;
                  animation-delay: 3s;
                  animation-iteration-count: infinite;
+                 animation-direction: normal;
+                animation-fill-mode: none;
+                animation-play-state: running;
+                animation-timing-function: ease-in-out;
                   }
                   @keyframes ball7{
-                 0%{left:800px; top:0px;}
-                 50%{left: 800px; top:10px;}
-                 100%{left:800px; top: 0px;}
+                    0%{
+                        transform: translate(0px, 0px);
+                    }
+                    50%{
+                        transform: translate(0px, 10px);
+                    }
+                    100%{
+                        transform: translate(0px, 0px);
+                    }
                   }
-                  #div7ball4{
+                  .div7ball4{
                  position: absolute;
                  top: 0px;
-                 left:720px;
+                 right:0px;
                  width: 510px;
                  height: 500px;
                  animation-name: ball4;
                  animation-duration: 4s;
+                 animation-timing-function: ease-in-out;
                  animation-delay: 1s;
                  animation-iteration-count: infinite;
+                 animation-direction: normal;
+                animation-fill-mode: none;
+                animation-play-state: running;
                   }
                   @keyframes ball4{
-                 0%{left:765px; top:0px;}
-                 50%{left: 770px; top:10px;}
-                 100%{left:765px; top: 0px;}
+                    0%{
+                        transform: translate(0px, 0px);
+                    }
+                    50%{
+                        transform: translate(5px, 10px);
+                    }
+                    100%{
+                        transform: translate(0px, 0px);
+                    }
                   }
-                  #div7ball6{
+                  .div7ball6{
                  position: absolute;
-                 top: 0px;
-                 left:720px;
+                 top: 0;
+                 right:0;
                  width: 510px;
                  height: 500px;
                  animation-name: ball6;
                  animation-duration: 3s;
+                 animation-timing-function: ease-in-out;
                  animation-delay: 0s;
                  animation-iteration-count: infinite;
+                 animation-direction: normal;
+                animation-fill-mode: none;
+                animation-play-state: running;
                   }
                   @keyframes ball6{
-                 0%{left:740px; top:0px;}
-                 50%{left: 750px; top:10px;}
-                 100%{left:740px; top: 0px;}
+                    0%{
+                        transform: translate(0px, 0px);
+                    }
+                    50%{
+                        transform: translate(10px, 10px);
+                    }
+                    100%{
+                        transform: translate(0px, 0px);
+                    }
                   }
-                  #div7ball9{
+                  .div7ball9{
                  position: absolute;
                  top: 0px;
-                 left:720px;
+                 right:0px;
                  width: 510px;
                  height: 500px;
                  animation-name: ball9;
                  animation-duration: 3s;
+                 animation-timing-function: ease-in-out;
                  animation-delay: 1s;
                  animation-iteration-count: infinite;
+                 animation-direction: normal;
+                animation-fill-mode: none;
+                animation-play-state: running;
                  }
                  @keyframes ball9{
-                 0%{left:750px; top:0px;}
-                 50%{left: 755px; top:0px;}
-                100%{left:750px; top: 0px;}
+                    0%{
+                        transform: translate(0px, 0px);
+                    }
+                    50%{
+                        transform: translate(5px, 10px);
+                    }
+                    100%{
+                        transform: translate(0px, 0px);
+                    }
                  }
-                 #div7greencard{
+                 .div7greencard{
                 position: absolute;
-                top: 0px;
+                bottom: 0px;
                 left:0px;
                 width: 510px;
                 height: 500px;
                 animation-name: greencard;
                 animation-duration: 2s;
+                animation-timing-function: ease-in-out;
                 animation-delay: 0s;
                 animation-iteration-count: infinite;
+                animation-direction: normal;
+                animation-fill-mode: none;
+                animation-play-state: running;
                  }
                  @keyframes greencard{
-                0%{left:3px; top:380px;}
-                50%{left: 0px; top:375px;}
-                100%{left:3px; top: 380px;}
+                    0%{
+                        transform: translate(0px, 0px);
+                    }
+                    50%{
+                        transform: translate(-3px, -5px);
+                    }
+                    100%{
+                        transform: translate(0px, 0px);
+                    }
                  }
-                 #div7bluecard{
+                 .div7bluecard{
                 position: absolute;
-                top: 180px;
+                bottom: 0px;
                 left: 0px;
                 width: 510px;
                 height: 500px;
                 animation-name: bluecard;
                 animation-duration: 4s;
+                animation-timing-function: ease-in-out;
                 animation-delay: 3s;
                 animation-iteration-count: infinite;
+                animation-direction: normal;
+                animation-fill-mode: none;
+                animation-play-state: running;
                  }
                  @keyframes bluecard{
-                0%{left:5px; top:380px;}
-                50%{left: 0px; top:370px;}
-                100%{left:5px; top: 380px;}
+                    0%{
+                        transform: translate(0px, 0px);
+                    }
+                    50%{
+                        transform: translate(-5px, -10px);
+                    }
+                    100%{
+                        transform: translate(0px, 0px);
+                    }
                  } 
-                 #div7redcard{
+                 .div7redcard{
                 position: absolute;
-                top: 0px;
+                bottom: 0px;
                 left: 0px;
                 width: 510px;
                 height: 500px;
                 animation-name: redcard;
                 animation-duration: 3s;
+                animation-timing-function: ease-in-out;
                 animation-delay: 2s;
                 animation-iteration-count: infinite;
+                animation-direction: normal;
+                animation-fill-mode: none;
+                animation-play-state: running;
                  }
                  @keyframes redcard{
-                0%{left:10px; top:320px;}
-                50%{left: 5px; top:315px;}
-                100%{left:10px; top:320px;}
+                0%{
+                            transform: translate(0px, 0px);
+                        }
+                        50%{
+                            transform: translate(-5px, -5px);
+                        }
+                        100%{
+                            transform: translate(0px, 0px);
+                        }
                  } 
-                 #div7greenbottomcard{
+                 .div7greenbottomcard{
                 position: absolute;
-                top: 180px;
+                bottom: 0px;
                 left: 0px;
                 width: 510px;
                 height: 500px;
                 animation-name: greenbottomcard;
                 animation-duration: 4s;
+                animation-timing-function: ease-in-out;
                 animation-delay: 0s;
                 animation-iteration-count: infinite;
+                animation-direction: normal;
+                animation-fill-mode: none;
+                animation-play-state: running;
                  }
                  @keyframes greenbottomcard{
-                0%{left:0px; top:360px;}
-                50%{left: 0px; top:375px;}
-                100%{left:0px; top: 360px;}
+                    0%{
+                        transform: translate(0px, 0px);
+                    }
+                    50%{
+                        transform: translate(0px, 15px);
+                    }
+                    100%{
+                        transform: translate(0px, 0px);
+                    }
                  }
-                 #div7card{
-                display: flex;
-                justify-content: center;
-                align-content: center;
-                padding-bottom: 500px;
-                 }
-    
-
+    .div7_parent {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
 
 /* div_8 */
 
@@ -2329,7 +2526,7 @@ body {
     color: #1fc7d4;
 }
 
-#div8_buycake {
+.div8_buycake {
     display: flex;
     align-items: center;
     margin-right: 16px;
@@ -2341,10 +2538,10 @@ body {
     transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
     cursor: pointer;
 }
-#div8_buycake:hover {
+.div8_buycake:hover {
     opacity: 50%;
 }
-#div8_buycake_anchor {
+.div8_buycake_anchor {
     font-weight: 600;
     text-decoration: none;
     font-family: 'Kanit', sans-serif;
@@ -2352,7 +2549,7 @@ body {
     font-size: 16px;
     color: #191326;
 }
-#div8_learn {
+.div8_learn {
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -2627,6 +2824,7 @@ body {
 }
 
 /* div_9 */
+/* div_9 */
 * {
     font-family: Kanit, sans-serif;
 }
@@ -2696,6 +2894,7 @@ body {
 }
 
 .many1 {
+    max-width: 1200px;
     visibility: visible;
     overflow: hidden;
     position: absolute;
@@ -2907,7 +3106,6 @@ a{
     justify-content: center;
     padding: 40px 16px;
     margin-bottom: 44px;
-    overflow: hidden;
 }
 
 @media screen and (min-width: 576px) {
@@ -2930,12 +3128,27 @@ a{
     }
 }
 
+.firstpancklogo {
+    margin-bottom: 24px;
+    display: block;
+}
+
+.pancklogo {
+    align-self: center;
+    flex-shrink: 0;
+}
+
+@media screen and (min-width: 576px) {
+    .firstpancklogo {
+        display: none;
+    }
+}
+
 #div10 .content {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    float: left;
     margin-bottom: 42px;
 }
 
@@ -2950,11 +3163,9 @@ a{
 }
 
 #div10 .contentlist {
+    margin-bottom: 40px;
     list-style: none;
     display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    padding-inline-start: 40px;
 }
 
 @media screen and (min-width: 852px) {
@@ -2970,15 +3181,12 @@ a{
     text-transform: uppercase;
     font-size: 16px;
     margin-bottom: 8px;
-    display: list-item;
-    
 }
 
 #div10 .about-info {
     font-size: 16px;
     margin-bottom: 8px;
     text-transform: capitalize;
-    display: list-item;
 }
 
 #div10 .contacted {
@@ -2989,7 +3197,6 @@ a{
     width: fit-content;
     font-weight: 400;
     line-height: 1.5;
-    text-decoration: none;
 }
 
 #div10 .frombrand {
@@ -3000,8 +3207,6 @@ a{
     font-weight: 400;
     line-height: 1.5;
     font-size: 16px;
-    text-decoration: none;
-    
 }
 
 #div10 #iconpage {
@@ -3019,11 +3224,6 @@ a{
     line-height: 1.5;
     margin-left: 40px;
     text-decoration: none;
-}
-
-#div10 .pancklogo {
-    width: 160px;
-    fill: #f4eeff;
 }
 
 #div10 #announcements {
@@ -3063,20 +3263,54 @@ a{
     height: 48px;
     border-radius: 16px;
 }
+
+.theme {
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    padding: 24px 0px;
+    margin-bottom: 24px;
+    order: 1;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 576px) {
+    .theme {
+        border-top-width: 0px;
+        border-bottom-width: 0px;
+        padding: 0px;
+        margin-bottom: 0px;
+        border-color: #383241;
+        border-style: solid;
+        order: 3;
+        flex-direction: row;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.theme2 {
+    order: 2;
+}
+
+@media screen and (min-width: 576px) {
+    .theme2 {
+        order: 1;
+        display: flex;
+        align-items: center;
+    }
+}
+
 .dark-theme {
     position: relative;
     width: 56px;
     height: 32px;
     overflow: hidden;
-    display: block;
 }
 
 .langs {
-    transform: translate(0px);
+    transform: translateX(0px);
     position: relative;
     will-change: opacity;
-    opacity: 0;
-    display: block;
 }
 
 .langs.appear {
@@ -3122,7 +3356,6 @@ a{
     position: absolute;
     width: 100%;
     z-index: 3;
-    left: calc(100%);
 }
 
 .mooncake {
@@ -3138,7 +3371,7 @@ a{
     transition-property: left;
     width: 26px;
     z-index: 1;
-    display: block;
+    left: 3px;
 }
 
 .sunshine {
@@ -3149,9 +3382,6 @@ a{
 }
 
 .langs-svg {
-    color: #9a6aff;
-    width: 20px;
-    fill: #9a6aff;
     align-self: center;
     flex-shrink: 0;
 }
@@ -3165,11 +3395,8 @@ a{
 }
 
 .svgtenth {
-    color: #27262c;
-    width: 20px;
     align-self: center;
     flex-shrink: 0;
-    fill: #27262c;
 }
 
 .race {
@@ -3203,9 +3430,6 @@ a{
 }
 
 .langexchange {
-    fill: #b8add2;
-    color: #b8add2;
-    width: 24px;
     align-self: center;
     flex-shrink: 0;
     margin-right: 0.5rem;
@@ -3242,7 +3466,74 @@ a{
 }
 
 .endlogo {
-    margin-right: 20px;
-    display: block;
+    order: 1;
+    margin-bottom: 24px;
 }
 
+@media screen and (min-width: 576px) {
+    .endlogo {
+        order: 2;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 0px;
+    }
+}
+
+.startFooter {
+    margin-right: 20px;
+}
+
+.standardPrice {
+    display: flex;
+    align-items: center;
+    color: inherit;
+    text-decoration: none;
+}
+
+.logosvg {
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    transition-property: transform;
+    align-self: center;
+    flex-shrink: 0;
+    margin-right: 8px;
+}
+
+.price {
+    color: #b8add2;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.buycake {
+    position: relative;
+    align-items: center;
+    border: 0px;
+    border-radius: 16px;
+    cursor: pointer;
+    display: inline-flex;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    letter-spacing: 0.03em;
+    line-height: 1;
+    opacity: 1;
+    outline: 0px;
+    height: 32px;
+    padding: 0px 16px;
+    background-color: #1fc7d4;
+    color: #191326;
+    transition-duration: 0.2s, 0.2s;
+    transition-timing-function: ease, ease;
+    transition-delay: 0s, 0s;
+    transition-property: background-color, opacity;
+}
+
+.buycakesvg {
+    align-self: center;
+    flex-shrink: 0;
+    margin-left: 0.5rem;
+}
