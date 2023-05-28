@@ -197,7 +197,9 @@
   margin-right: 0px;
 }
 .section3_bottom {
+  position: relative;
   margin-top: 92px;
+  z-index: 99;
 }
 .section3_bottom_1 {
   display: flex;
@@ -543,6 +545,10 @@ footer::after {
     padding-left: 0px;
     margin-left: 0px;
   }
+  #pageup {
+    right: 30px;
+    bottom: 30px;
+  }
 }
 @media screen and (max-width: 370px) {
   .header2 {
@@ -569,6 +575,53 @@ footer::after {
     height: 406px;
     align-self: center;
   }
+  .section3_top_1 {
+    text-align: left;
+  }
+  .section3_top_2 {
+    text-align: left;
+  }
+  .section3_float {
+    display: none;
+  }
+  .section3_bottom_2 {
+    flex-direction: column;
+  }
+  .section3_bottom_2a {
+    width: auto;
+    margin-bottom: 24px;
+  }
+  .section3_bottom_2a_y {
+    border-right: none;
+  }
+  .section3_bottom_2b {
+    width: auto;
+    margin-bottom: 24px;
+  }
+  .section3_bottom_2b_y {
+    border-right: none;
+  }
+  .section3_bottom_2c {
+    width: auto;
+  }
+  .section3_bottom_2c_y {
+    border-right: none;
+  }
+  .section4_box_imgtext {
+    flex-direction: column;
+    display: flex;
+  }
+  .section4_box_text {
+    align-self: center;
+    text-align: center;
+  }
+  .section4_box_img {
+    align-self: center;
+  }
+  .section4_box_textimg {
+    flex-direction: column-reverse;
+    display: flex;
+  }
 }
 @media screen and (max-width: 576px) {
   .header2 {
@@ -580,6 +633,7 @@ footer::after {
   }
   .section1 {
     flex-direction: column;
+    gap: 15px;
   }
   .section1_right {
     margin-left: 16px;
@@ -602,6 +656,9 @@ footer::after {
   .section1_right_c .trans_anchor {
     line-height: 1;
     font-size: 14px;
+  }
+  .section3_top {
+    width: auto;
   }
 }
 @media screen and (max-width: 968px) {
@@ -857,4 +914,15 @@ footer::after {
   100% {
     transform: translate(0px, 0px);
   }
+}
+html ::-webkit-scrollbar {
+  width: 8px;
+}
+html ::-webkit-scrollbar-thumb {
+  background: #b8add2;
+  border-radius: 8px;
+}
+html ::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px var(--colors-input);
+  border-radius: 10px;
 }/*# sourceMappingURL=affiliates.css.map */
