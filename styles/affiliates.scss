@@ -48,6 +48,7 @@ $middle_weight: 400;
 .container_section1 {
     background: rgb(33,25,58);
     background: radial-gradient(circle, rgba(33,25,58,1) 0%, rgba(25,19,38,1) 100%);
+    overflow: hidden ;
 }
 .parent_section1 {
     display: flex;
@@ -84,6 +85,7 @@ $middle_weight: 400;
     flex-direction: row;
     padding: 48px 24px;
     &_left {
+        z-index: 999;
         flex: 0.38;
         height: 640px;
         width: 560px;
@@ -93,6 +95,7 @@ $middle_weight: 400;
         }
     }
     &_right {
+        z-index: 999;
         align-self: center;
         margin-left: 48px;
         flex: 0.62;
@@ -535,6 +538,7 @@ footer {
         padding-left: 0px;
         margin-left: 0px;
     }
+
 }
 @media screen and (max-width: 370px) {
     .header2 {
@@ -552,6 +556,95 @@ footer {
 @media screen and (max-width: 852px) {
     .parent_section1 {
         padding-top: 16px;
+    }
+    .div4_box4 {
+        max-height: 240px;
+        max-width: 240px;
+    }
+    .section1 {
+        flex-direction: column;
+        &_left {
+            width: 327px;
+            height: 406px;
+            align-self: center;
+        }
+    }
+}
+@media screen and (max-width: 576px) {
+    .header2 {
+        overflow-x: scroll;
+    }
+    .div4_box4 {
+        max-height: 240px;
+        max-width: 240px;
+    }
+    .section1 {
+        &_right {
+            margin-left: 16px;
+        }
+        flex-direction: column;
+        &_left {
+            width: 257px;
+            height: 356px;
+            align-self: center;
+        }
+        &_right_a {
+            font-size: 38px;
+        }
+        &_right_b {
+            font-size: 16px;
+        }
+        &_right_c {
+            .button_anchor {
+                line-height: 1;
+                font-size: 14px;
+            }
+            .trans_anchor {
+                line-height: 1;
+                font-size: 14px;
+            }
+        }
+        
+    }
+}
+@media screen and (max-width: 968px) {
+    .section5_faq {
+       min-width: 95%;
+       max-width: 100%;
+    }
+    .section5 {
+        max-width: 100%;
+        min-width: 0px;
+    }
+    .section1_floating {
+        #floimg1 {
+            left: 2%;
+            top: 2%;
+            width: 70px;
+        }
+        #floimg2 {
+            left: 0%;
+            bottom: 55%;
+            width: 126px;
+        }
+        #floimg3 {
+            right: 0%;
+            top: 0%;
+            width: 72px;
+        }
+    }
+}
+@media screen and (max-width: 1080px) {
+    .section5_faq {
+       min-width: 95%;
+       max-width: 100%;
+    }
+    .section5 {
+        max-width: 100%;
+        min-width: 0px;
+    }
+    .section5_box {
+        margin: 0px;
     }
 }
 
