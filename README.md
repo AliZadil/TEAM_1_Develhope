@@ -10,12 +10,12 @@
   <h3 align="center">PancakeSwap Clone Project</h3>
 
   <p align="center">
-    A team project where four students of Develhope learn and develope!
+    A team project where three students of Develhope learn and develope!
     <br />
-    <a href="https://www.canva.com/design/DAFj_Z-V7Fo/39kqMUeqrZe1NW9zwaLs8g/edit?utm_content=DAFj_Z-V7Fo&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"><strong>Explore the presentation »</strong></a>
+    <a href="https://www.canva.com/design/DAFl-38E2FU/TLxkMB9-NJ8stTDQSI5amg/view?utm_content=DAFl-38E2FU&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"><strong>Explore the presentation »</strong></a>
     <br />
     <br />
-    <a href="https://alizadil.github.io/TEAM_1_Develhope/">View Demo</a>
+    <a href="https://alizadil.github.io/TEAM_1_Develhope/">View Demo (Old Version / no React)</a>
     ·
     <a href="https://github.com/AliZadil/TEAM_1_Develhope/issues">Report Bug</a>
     ·
@@ -26,7 +26,7 @@
 
 
 <!-- TABLE OF CONTENTS -->
-<details>
+<!-- <details>
   <summary>Table of Contents</summary>
   <ol>
     <li>
@@ -49,25 +49,43 @@
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
-</details>
+</details> -->
 
 
 
 <!-- ABOUT THE PROJECT -->
-## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://document-export.canva.com/8E2FU/DAFl-38E2FU/1/thumbnail/0001.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUHWDTJW6UD%2F20230621%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230621T180409Z&X-Amz-Expires=10432&X-Amz-Signature=99319fdb299cf44a8b45eee2aa6253985ed7d6b3d377ff37f2ae01a7ca06a8e9&X-Amz-SignedHeaders=host&response-expires=Wed%2C%2021%20Jun%202023%2020%3A58%3A01%20GMT)
+## About the Project
 
-There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
+### Pancake Swap Clone - Front-end Development Project
 
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should implement DRY principles to the rest of your life :smile:
+The Pancake Swap Clone is an impressive front-end development project crafted by our team using HTML, CSS, JavaScript, React.js, and Sass. Inspired by the popular decentralized exchange (DEX) platform, Pancake Swap, this clone showcases the user interface and design of the original platform.
 
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
+### Project Purposes
 
-Use the `BLANK_README.md` to get started.
+1. **Front-end Proficiency**
+
+   Our main objective in creating the Pancake Swap Clone was to exhibit our expertise in front-end web development. By utilizing the latest technologies, including React.js and Sass, we aimed to build a visually appealing and interactive user interface that mirrors the look and feel of the original Pancake Swap platform.
+
+2. **Showcasing Design Skills**
+
+   As part of this project, we focused on implementing responsive design principles to ensure a seamless user experience across various devices. By showcasing our design skills, we aim to highlight the importance of creating user-friendly interfaces in modern web development.
+
+3. **Open-Source Contribution**
+
+   We believe in the power of open-source projects to foster collaboration and knowledge-sharing within the development community. By making the Pancake Swap Clone open-source, we hope to provide fellow developers with a valuable reference for front-end development practices and React.js implementation.
+
+4. **Personal Portfolio Enhancement**
+
+   Creating the Pancake Swap Clone allowed us to add a significant and challenging project to our individual portfolios. It demonstrates our ability to work on complex front-end projects and contributes to building our professional credibility as front-end developers.
+
+### Disclaimer
+
+*Please note that the Pancake Swap Clone project is intended for educational and demonstrative purposes only. It does not include real crypto transactions or any back-end functionalities. The project does not provide actual DeFi capabilities or interact with live blockchain networks.*
+
+---
+
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -77,60 +95,74 @@ Use the `BLANK_README.md` to get started.
 
 This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
-* [![React][React.js]][React-url]
+*  ![React](https://img.shields.io/badge/-React-black)
+ ![JavaScript](https://img.shields.io/badge/-JavaScript-yellow)
+ ![TypeScript](https://img.shields.io/badge/-TypeScript-blue)
+ ![Git](https://img.shields.io/badge/-Git-orange)
+ ![HTML](https://img.shields.io/badge/-HTML-blue)
+  ![CSS](https://img.shields.io/badge/-CSS-orange)
+![SASS](https://img.shields.io/badge/-SASS-red)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
 <!-- GETTING STARTED -->
+
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+Follow the steps below to get the Pancake Swap Clone up and running on your local machine.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+Before you proceed, make sure you have the following installed on your system:
+
+-   [Node.js](https://nodejs.org/) (with npm) - Version 12 or higher
 
 ### Installation
 
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
+1.  Clone the repository to your local machine using the following command:
+    
+    `git clone https://github.com/AliZadil/TEAM_1_Develhope` 
+    
+2.  Navigate to the project directory:
+    
+    `cd TEAM_1_Develhope` 
+    
+3.  Install the required dependencies:
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/your_username_/Project-Name.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
+    `npm install` 
+    
+
+### Running the Application
+
+Once you have completed the installation, you can run the Pancake Swap Clone locally on your machine.
+
+`npm start` 
+
+The application will be running at `http://localhost:3000`.
+
+### Building for Production
+
+If you want to build the project for production, use the following command:
+
+`npm run build` 
+
+This will create an optimized build in the `build` directory, ready to be deployed to a web server.
+
+### Testing
+
+To run the tests for the Pancake Swap Clone, use the following command:
+
+`npm test` 
+
+This will execute the test suite and provide feedback on the project's test coverage.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- USAGE EXAMPLES -->
-## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 
 <!-- ROADMAP -->
+<!--
 ## Roadmap
 
 - [x] Add Changelog
@@ -144,7 +176,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
+-->
 
 
 <!-- CONTRIBUTING -->
@@ -175,11 +207,15 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 
 <!-- CONTACT -->
-## Contact
+## Contacts
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+Ali Tarik Zadil - github/[@AliZadil](https://github.com/AliZadil) - tarikz94@gmail.com
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+Fred Eugine Adomako - github/[@Fredeugine](https://github.com/Fredeugine) - fredadomako2003@gmail.com
+
+Metehan Dönmez - github/[@metehandoenmez](https://github.com/metehandoenmez) - metehandoenmez@gmail.com
+
+Project Link: [https://github.com/AliZadil/TEAM_1_Develhope](https://github.com/AliZadil/TEAM_1_Develhope)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -188,16 +224,13 @@ Project Link: [https://github.com/your_username/repo_name](https://github.com/yo
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
-
+* [PancakeSwap](https://pancakeswap.finance/)
+* [Develhope](https://develhope.co/en)
 * [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
-* [Malven's Grid Cheatsheet](https://grid.malven.co/)
 * [Img Shields](https://shields.io)
 * [GitHub Pages](https://pages.github.com)
-* [Font Awesome](https://fontawesome.com)
-* [React Icons](https://react-icons.github.io/react-icons/search)
+
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
