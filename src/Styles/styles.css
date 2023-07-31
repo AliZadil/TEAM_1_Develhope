@@ -2,6 +2,7 @@
 body {
   overflow-x: hidden;
 }
+
 .DWswitch{
     padding-left: 2.5px;
     padding-right: 2.5px;
@@ -35,7 +36,7 @@ body {
 /* page up button */
 .page-up {
     position: fixed;
-    bottom: 135px;
+    bottom: 160px !important;
     right: 100px;
     background-color: #1fc7d4;
     color: #fff;
@@ -69,7 +70,7 @@ html {
 /* div_1 */
 body {
     font-family: Kanit, sans-serif;
-    background-color: #08060b;
+    background-color: #202023;
     display: flex;
     flex-direction: column;
 }
@@ -195,9 +196,9 @@ body{
     justify-content: space-between;
     background-color: #27262c;
     border-top: 1px solid #383241;
-    z-index: 202093790173204971420;
+    z-index: 9999999;
     padding: 5px;
-    padding-left: 32px;
+    padding-left: 50px;
     height: 40px
 }
 
@@ -535,6 +536,7 @@ body{
     max-width: 100%;
     background-color: #1d1630;
     z-index: 0;
+    padding-top: 100px !important;
 }
 
 .animation_div {
@@ -806,7 +808,7 @@ body{
     outline: 0px;
     transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
     height: 32px;
-    padding: 0px 16px;
+    padding: 0px 12px;
     background-color: #1fc7d4;
     color: #191326;
     margin-right: 18px;
@@ -829,6 +831,7 @@ body{
 #img_beer {
     width: 1.5rem;
     height: 1.5rem;
+    padding-left: 10px;
 
 }
 
@@ -927,7 +930,7 @@ body{
 
 .sec_4 {
     display: flex;
-    gap: 1.5rem;
+    gap: 1.4rem;
     align-items: center;
     justify-content: center;
 }
@@ -2031,6 +2034,7 @@ body {
     font-size: 40px;
     font-weight: 600;
     line-height: 1.1;
+    padding-left: 30px !important;
 }
 
 .div6text2 {
@@ -2039,6 +2043,7 @@ body {
     font-weight: 400;
     margin-bottom: 24px;
     line-height: 1.5;
+    padding-left: 30px !important;
 }
 
 #div6explore {
@@ -2055,6 +2060,7 @@ body {
 .div6_content_bottom {
     display: flex;
     align-items: center;
+    padding-left: 30px !important;
 }
 
 #div6svglearn {
@@ -2099,6 +2105,7 @@ body {
     #div6_hidden,#div6_visible{
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
+        padding-left: 16px !important;
     }
     #div6thirdc {
         grid-area: 2/1/2/2;
@@ -2164,7 +2171,7 @@ body {
     grid-row-start: 1;
     grid-row-end: 2;
     padding-left: 20px;
-    margin: 0px;
+   margin: 0px;
 }
 
 .div6secondc {
@@ -2175,6 +2182,8 @@ body {
     padding-left: 20px;
     border-left: 1px solid black;
     margin: 0px;
+    position: relative;
+    left: -20px;
 }
 
 .div6thirdc {
@@ -2204,6 +2213,8 @@ body {
     grid-row-end: 2;
     border-left: 1px solid black;
     padding-left: 20px;
+    position: relative;
+    left: -20px;
     margin: 0px;
 }
 
@@ -2274,8 +2285,9 @@ body {
 }
 
 #div7h1 {
-    font-size: 40px;
+    font-size: 35px;
     font-weight: 600;
+
 }
 
 #div7p1 {
@@ -2765,6 +2777,7 @@ body {
     line-height: 1.1;
     color: #F4EEFF;
     margin: 0px 0px 24px 0px;
+    padding-left: 10px !important;
 }
 
 #div8_text1 span {
@@ -2777,11 +2790,13 @@ body {
     line-height: 1.5;
     color: #b8add2;
     margin: 0px 0px 24px 0px;
+    padding-left: 10px !important;
 }
 
 .div8_top_left_buttons {
     display: flex;
     color: #1fc7d4;
+    padding-left: 10px !important;
 }
 
 .div8_buycake {
@@ -2834,6 +2849,10 @@ body {
     position: relative;
     top: 0px;
     left: 0px;
+}
+
+.div8_bottom {
+  padding-left: 10px !important;
 }
 
 .div8_top_right div {
@@ -3345,6 +3364,8 @@ body {
     line-height: 1.5;
     text-align: center;
     font-size: 16px;
+    padding-left: 15px;
+    padding-right: 15px;
     display: block;
 }
 
@@ -3429,7 +3450,7 @@ a {
     display: flex;
     flex-direction: column;
     max-width: 1200px;
-    width: 100%;
+    width: 330px !important;
 }
 
 .content {
@@ -3489,7 +3510,7 @@ a {
 .iconpage {
     border-bottom: 1px solid #383241;
     display: flex;
-    gap: 2rem;
+    gap: 25px;
     padding-bottom: 16px;
 }
 
@@ -3574,8 +3595,8 @@ a {
     .page-up {
         visibility: hidden;
         position: fixed;
-        bottom: 60px;
-        right: 30px;
+        bottom: 120px;
+        right: 40px;
         background-color: #1fc7d4;
         color: #fff;
         border: none;
@@ -3879,6 +3900,7 @@ a {
     }
     .div6topsyruppoolstext {
         padding: 20px;
+        padding-left: 30px !important;
     }
     .div6content {
         padding-bottom: 0px;
@@ -4122,4 +4144,33 @@ html::-webkit-scrollbar-track {
   box-shadow: 0 2px lightsalmon;
   transform: translateY(4px);
   transition: 0.3 ease-in-out;
+}
+@media screen and (max-width: 415px) {
+  .navbar {
+    position: fixed !important;
+    padding-top: 70px !important;
+    border-top-left-radius: 64px;
+    border-top-right-radius: 64px;
+    max-width: 380px !important;
+  }
+
+  .mbNavbar {
+    padding-bottom: 60px !important;
+    border-bottom-right-radius: 90px !important;
+    border-bottom-left-radius: 90px !important;
+    max-width: 360px;
+    background-color: #202023 !important;
+  }
+  html {
+    border-radius: 64px !important;
+  }
+  #div6_hidden {
+    position: relative;
+    margin-top: -200px;
+    bottom: 200px;
+    top: -150px !important;
+  }
+  footer {
+    padding-bottom: 70px !important;
+  }
 }

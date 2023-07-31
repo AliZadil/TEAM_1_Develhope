@@ -33,7 +33,7 @@ export function Homepage() {
     }
 
     switchButton.addEventListener("click", switchTable);
-    setInterval(switchTable, 4000);
+    setInterval(switchTable, 6000);
   }, []);
   function blue() {
     return <></>;
@@ -824,40 +824,6 @@ export function Homepage() {
         </div>
         <span className="scale_border" />
       </main>
-
-      <div className="new0ptions" id="earn">
-        <span className="opt_kids">Farms</span>
-        <span className="opt_kids">Pools</span>
-        <span className="opt_kids">Liquid Staking</span>
-      </div>
-      <div className="new0ptions" id="win">
-        <span className="opt_kids">Trading Competition</span>
-        <span className="opt_kids">Prediction(BETA)</span>
-        <span className="opt_kids">Lottery</span>
-        <span className="opt_kids" id="potteryDiv2">
-          Pottery (BETA) <span className="pottery">POT OPEN</span>
-        </span>
-      </div>
-      <div className="new0ptions" id="nft">
-        <span className="opt_kids">Overview</span>
-        <span className="opt_kids">Collections</span>
-        <span className="opt_kids">Activity</span>
-      </div>
-      <div className="new0ptions" id="dots">
-        <span className="opt_kids">Info</span>
-        <span id="ifoPAGEBtn2" className="opt_kids">
-          IFO
-        </span>
-        <span className="opt_kids">Voting</span>
-        <span className="opt_kids">Leaderboard</span>
-        <span className="opt_kids" id="blog2">
-          Blog <img src="/images/l-arrow.svg" />
-        </span>
-        <span className="opt_kids" id="docs2">
-          Docs <img src="/images/l-arrow.svg" />{" "}
-        </span>
-      </div>
     </>
   );
 }
-// Fred Homepage Section ends

@@ -66,12 +66,12 @@ export function Navbar() {
       if (prevScrollPos > currentScrollPos) {
         // Scrolling up
 
-        document.getElementById("navbar").style.top = "0";
+        document.getElementById("navbar").style.top = "0px";
       } else {
         // Scrolling down
 
         if (currentScrollPos > 1200) {
-          document.getElementById("navbar").style.top = "-100px";
+          document.getElementById("navbar").style.top = "-180px";
         }
       }
 
@@ -169,7 +169,13 @@ export function Navbar() {
   }, []);
 
   return (
-    <div id="navbar" className="navbar">
+    <div
+      id="navbar"
+      className="navbar"
+      style={{
+        maxWidth: "100%",
+      }}
+    >
       <div id="sep1" className="sep1">
         <div id="sec1" className="sec_1">
           <Link to={"/"}>
@@ -324,7 +330,7 @@ export function Navbar() {
             <span id="div_bnb" className="div_bnb">
               <img className="imgs" id="img_bnb" src="/images/56.png" />
               <p id="bnb_word" className="bnb_word">
-                BNB Smart Chain
+                BNB
               </p>
               <img className="darr" src="/images/down_arrow.svg" />
             </span>
